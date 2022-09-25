@@ -22,9 +22,8 @@
             margin-left:21px;
             margin-right: 20px;
 
-            &_a {
+            &_link {
                 color: $black-color;
-
                 text-decoration: none;
             }
         }
@@ -41,7 +40,7 @@
     }
 }
 
-@media screen and (max-width: $tablet-width) {
+@media screen and (max-width: $tablet-album-width) {
     .header {
         padding: 34px 40px;
 
@@ -56,8 +55,7 @@
         }
     }
 }
-
-@media screen and (max-width: $phone-width) {
+@media screen and (max-width: $tablet-portrait-width) {
     .header {
         padding: 20px 20px;
 
@@ -69,6 +67,30 @@
                 margin-left: 6px;
                 margin-right: 5px;
             }
+        }
+    }
+}
+
+@media screen and (max-width: $phone-album-width) {
+    .header {
+        padding: 16px 16px;
+
+        font-size: 8px;
+
+        &_menu {
+
+            &_logo {
+                margin-right:8px;
+            }
+
+            &_choice {
+                margin-left: 4px;
+                margin-right: 3px;
+            }
+        }
+
+        &_phone {
+            display: none;
         }
     }
 }

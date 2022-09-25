@@ -1,0 +1,29 @@
+@import "@styles/variables.scss";
+
+#aboutUs {
+    padding-top: 52px;
+    padding-left: 105px;
+    padding-bottom: 52px;
+    padding-right: 30%;
+
+    font-family: $cormorantSC;
+    font-size: 19px;
+}
+
+@media screen and (max-width: $tablet-album-width) {
+    #aboutUs {
+        padding-top: 32px;
+        padding-left: 40px;
+        padding-bottom: 52px;
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: $phone-album-width) {
+    #aboutUs {
+        padding-top: 16px;
+        padding-left: 16px;
+        padding-bottom: 16px;
+        font-size: 10px;
+    }
+}
