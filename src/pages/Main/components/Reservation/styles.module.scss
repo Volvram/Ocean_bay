@@ -1,0 +1,80 @@
+@import "@styles/variables.scss";
+
+.reservationBackground {
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.reservation {
+    &_h {
+        padding-top: 60px;
+        padding-left: 105px;
+
+        color: $white-color;
+
+        font-family: 'Cormorant SC';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 47px;
+        line-height: 115.6%;
+
+        text-transform: uppercase;
+    }
+
+    &_button {
+        margin-top: 40px;
+        margin-left: 105px;
+        padding: 8px 26px;
+
+        background-color: $white-color;
+        border: 0px;
+        border-radius: 2px;
+
+        color: #1B4673;
+
+        font-size: "Comfortaa";
+        font-style: normal;
+        font-size: 14px;
+        line-height: 115.6%;
+        text-transform: uppercase;
+    }
+}
+
+@media screen and (max-width: $tablet-album-width) {
+    .reservation {
+        &_h {
+            padding-top: 30px;
+            padding-left: 40px;
+
+            font-size: 26px;
+        }
+
+        &_button {
+            margin-left: 40px;
+
+            padding: 8px 20px;
+
+            font-size: 12px;
+        }
+    }
+}
+
+@media screen and (max-width: $phone-album-width) {
+    .reservation {
+        &_h {
+            padding-top: 16px;
+            padding-left: 16px;
+
+            font-size: 16px;
+        }
+
+        &_button {
+            margin-top: 20px;
+            margin-left: 16px;
+
+            padding: 6px 16px;
+
+            font-size: 10px;
+        }
+    }
+}

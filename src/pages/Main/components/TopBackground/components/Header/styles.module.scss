@@ -1,7 +1,11 @@
 @import "@styles/variables.scss";
 
 .header {
-    padding: 34px 105px;
+    margin-left: 105px;
+    margin-right:105px;
+
+    padding-top: 34px;
+    padding-bottom: 34px;
 
     display: flex;
     justify-content: flex-start;
@@ -42,7 +46,8 @@
 
 @media screen and (max-width: $tablet-album-width) {
     .header {
-        padding: 34px 40px;
+        margin-left: 40px;
+        margin-right: 40px;
 
         font-size: 12px;
 
@@ -57,7 +62,11 @@
 }
 @media screen and (max-width: $tablet-portrait-width) {
     .header {
-        padding: 20px 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+
+        padding-top: 20px;
+        padding-bottom: 20px;
 
         font-size: 10px;
 
@@ -73,7 +82,11 @@
 
 @media screen and (max-width: $phone-album-width) {
     .header {
-        padding: 16px 16px;
+        margin-left: 16px;
+        margin-right: 16px;
+
+        padding-top: 16px;
+        padding-bottom: 16px;
 
         font-size: 8px;
 

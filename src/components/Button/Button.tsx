@@ -1,5 +1,7 @@
 import React from "react";
 
+import styles from "./styles.scss";
+
 type ButtonProps = React.PropsWithChildren<{
   onClick?: (event: React.MouseEvent) => void;
   className?: string;
@@ -19,6 +21,7 @@ const Button: React.FC<ButtonProps> = ({
       type="button"
       onClick={onClick}
       className={className}
+      disabled={disabled}
       {...attributes}
     >
       {children}
