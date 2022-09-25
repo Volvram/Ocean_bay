@@ -1,0 +1,5 @@
+@font-face {
+    font-family: "Cormorant SC";
+    src: local("Cormorant SC"),
+    url("./CormorantSC-Medium.ttf") format("truetype");
+}

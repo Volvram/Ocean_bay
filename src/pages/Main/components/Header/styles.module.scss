@@ -1,0 +1,74 @@
+@import "@styles/variables.scss";
+
+.header {
+    padding: 34px 105px;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    font-family: $comfortaa;
+
+    &_menu {
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &_logo {
+            margin-right:20px;
+        }
+
+        &_choice {
+            margin-left:21px;
+            margin-right: 20px;
+
+            &_a {
+                color: $black-color;
+
+                text-decoration: none;
+            }
+        }
+    }
+
+    &_phone {
+        margin-left: auto;
+
+        &_a {
+            color: $white-color;
+
+            text-decoration: none;
+        }
+    }
+}
+
+@media screen and (max-width: $tablet-width) {
+    .header {
+        padding: 34px 40px;
+
+        font-size: 12px;
+
+        &_menu {
+
+            &_choice {
+                margin-left: 11px;
+                margin-right: 10px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $phone-width) {
+    .header {
+        padding: 20px 20px;
+
+        font-size: 10px;
+
+        &_menu {
+
+            &_choice {
+                margin-left: 6px;
+                margin-right: 5px;
+            }
+        }
+    }
+}

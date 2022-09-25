@@ -1,0 +1,45 @@
+@import "@styles/variables.scss";
+
+.topBackground {
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: auto;
+    height: auto;
+
+    font-family: $cormorantSC;
+
+    &_intro {
+        padding-top: 30%;
+        padding-bottom: 11%;
+        padding-left: 105px;
+
+        width:fit-content;
+
+        color: $white-color;
+
+        &_title {
+            font-family: 'Cormorant SC';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 45px;
+            line-height: 115.6%;
+
+            text-transform: uppercase;
+        }
+
+        &_hr {
+            background-color: $white-color;
+            border: 1px solid $white-color;
+        }
+
+        &_slogan {
+            font-family: 'Cormorant SC';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 115.6%;
+
+            text-transform: uppercase;
+        }
+    }
+}
