@@ -9,7 +9,7 @@
     font-family: $cormorantSC;
 
     &_intro {
-        margin-left: 105px;
+        margin-left: $big-indent;
 
         padding-top: 30%;
         padding-bottom: 11%;
@@ -49,7 +49,7 @@
     .topBackground {
 
         &_intro {
-            margin-left: 40px;
+            margin-left: $average-indent;
 
             padding-top: 15%;
             padding-bottom: 20%;
@@ -69,7 +69,7 @@
     .topBackground {
 
         &_intro {
-            margin-left: 16px;
+            margin-left: $small-indent;
 
             padding-top: 5%;
             padding-bottom: 11%;

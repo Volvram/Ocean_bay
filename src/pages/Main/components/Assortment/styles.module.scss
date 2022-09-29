@@ -1,0 +1,47 @@
+@import "@styles/variables.scss";
+
+.assortment {
+    padding-left: $big-indent;
+    padding-right: $big-indent;
+
+    &_h {
+        margin-top: 63px;
+        margin-bottom: 30px;
+
+        color: $black-color;
+
+        font-family: $cormorantSC;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 100%;
+    }
+}
+
+@media screen and (max-width: $tablet-album-width) {
+    .assortment {
+        padding-left: $average-indent;
+        padding-right: $average-indent;
+
+        &_h {
+            margin-top: 30px;
+            margin-bottom: 15px;
+
+            font-size: 26px;
+        }
+    }
+}
+
+@media screen and (max-width: $phone-album-width) {
+    .assortment {
+        padding-left: $small-indent;
+        padding-right: $small-indent;
+
+        &_h {
+            margin-top: 16px;
+            margin-bottom: 8px;
+
+            font-size: 16px;
+        }
+    }
+}

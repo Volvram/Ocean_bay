@@ -1,8 +1,8 @@
 @import "@styles/variables.scss";
 
 .header {
-    margin-left: 105px;
-    margin-right:105px;
+    margin-left: $big-indent;
+    margin-right: $big-indent;
 
     padding-top: 34px;
     padding-bottom: 34px;
@@ -46,8 +46,8 @@
 
 @media screen and (max-width: $tablet-album-width) {
     .header {
-        margin-left: 40px;
-        margin-right: 40px;
+        margin-left: $average-indent;
+        margin-right: $average-indent;
 
         font-size: 12px;
 
@@ -82,8 +82,8 @@
 
 @media screen and (max-width: $phone-album-width) {
     .header {
-        margin-left: 16px;
-        margin-right: 16px;
+        margin-left: $small-indent;
+        margin-right: $small-indent;
 
         padding-top: 16px;
         padding-bottom: 16px;

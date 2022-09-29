@@ -8,11 +8,11 @@
 .reservation {
     &_h {
         padding-top: 60px;
-        padding-left: 105px;
+        padding-left: $big-indent;
 
         color: $white-color;
 
-        font-family: 'Cormorant SC';
+        font-family: $cormorantSC;
         font-style: normal;
         font-weight: 700;
         font-size: 47px;
@@ -23,7 +23,7 @@
 
     &_button {
         margin-top: 40px;
-        margin-left: 105px;
+        margin-left: $big-indent;
         padding: 8px 26px;
 
         background-color: $white-color;
@@ -32,11 +32,34 @@
 
         color: #1B4673;
 
-        font-size: "Comfortaa";
+        font-family: $comfortaa;
         font-style: normal;
         font-size: 14px;
         line-height: 115.6%;
         text-transform: uppercase;
+    }
+
+    &_hr {
+        margin-left: auto;
+        margin-right:$big-indent;
+
+        width: 176px;
+
+        background-color: $white-color;
+        border: 1px solid $white-color;
+    }
+
+    &_text {
+        margin-left: 40%;
+        margin-right: $big-indent;
+
+        padding-bottom: 40px;
+
+        color: $white-color;
+
+        text-align: right;
+
+        font-size: 19px;
     }
 }
 
@@ -44,15 +67,25 @@
     .reservation {
         &_h {
             padding-top: 30px;
-            padding-left: 40px;
+            padding-left: $average-indent;
 
             font-size: 26px;
         }
 
         &_button {
-            margin-left: 40px;
+            margin-left: $average-indent;
 
             padding: 8px 20px;
+
+            font-size: 12px;
+        }
+
+        &_hr {
+            margin-right: $average-indent;
+        }
+
+        &_text {
+            margin-right: $average-indent;
 
             font-size: 12px;
         }
@@ -63,16 +96,30 @@
     .reservation {
         &_h {
             padding-top: 16px;
-            padding-left: 16px;
+            padding-left: $small-indent;
 
             font-size: 16px;
         }
 
         &_button {
             margin-top: 20px;
-            margin-left: 16px;
+            margin-left: $small-indent;
 
             padding: 6px 16px;
+
+            font-size: 10px;
+        }
+
+        &_hr {
+            width: 120px;
+
+            margin-right: $small-indent;
+        }
+
+        &_text {
+            margin-right: $small-indent;
+
+            padding-bottom: 16px;
 
             font-size: 10px;
         }
