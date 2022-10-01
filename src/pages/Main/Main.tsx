@@ -4,6 +4,7 @@ import { useLocation } from "react-router-dom";
 
 import AboutUs from "./components/AboutUs/AboutUs";
 import Assortment from "./components/Assortment/Assortment";
+import Contacts from "./components/Contacts/Contacts";
 import Reservation from "./components/Reservation/Reservation";
 import TopBackground from "./components/TopBackground/TopBackground";
 
@@ -29,6 +30,7 @@ const Main: React.FC = () => {
       <AboutUs />
       <Reservation />
       <Assortment />
+      <Contacts />
     </div>
   );
 };

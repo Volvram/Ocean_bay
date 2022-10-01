@@ -1,6 +1,8 @@
 import React from "react";
 
-import styles from "./styles.scss";
+import cn from "classnames";
+
+import styles from "./styles.module.scss";
 
 type ButtonProps = React.PropsWithChildren<{
   onClick?: (event: React.MouseEvent) => void;
@@ -20,7 +22,7 @@ const Button: React.FC<ButtonProps> = ({
     <button
       type="button"
       onClick={onClick}
-      className={className}
+      className={cn(styles.button, className)}
       disabled={disabled}
       {...attributes}
     >

@@ -1,0 +1,166 @@
+@import "@styles/variables.scss";
+
+.contacts {
+    margin-top: 64px;
+    margin-bottom: 80px;
+    margin-left: $big-indent;
+    margin-right: $big-indent;
+
+    display:flex;
+
+    &_h {
+        font-family: $cormorantSC;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 139.9%;
+    }
+
+    &_hr {
+        margin-left: 0;
+        margin-right: auto;
+
+        width: 182px;
+
+        background-color: $dark-blue-color;
+        border: 1px solid $dark-blue-color;
+    }
+
+    &_text {
+        margin-right: 211px;
+
+        font-family: $cormorantSC;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 19px;
+    }
+
+    &_admin {
+        margin-right: 92px;
+
+        width: fit-content;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &_avatar {
+            @include square(150px);
+        }
+
+        &_name {
+            color: $dark-brown-color;
+
+            white-space: nowrap;
+
+            font-family: $cormorantSC;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 23px;
+        }
+
+        &_title {
+            color: $ligth-grey-color;
+
+            font-family: $cormorantSC;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 15px;
+        }
+
+        &_phone {
+            margin-top: 6px;
+
+            color: $dark-brown-color;
+
+            white-space: nowrap;
+
+            font-family: $cormorantSC;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 23px;
+        }
+    }
+}
+
+@media screen and (max-width: $tablet-album-width) {
+    .contacts {
+        margin-top: 32px;
+        margin-bottom: 40px;
+        margin-left: $average-indent;
+        margin-right: $average-indent;
+
+        &_h {
+            font-size: 26px
+        }
+
+        &_text {
+            margin-right: 135px;
+
+            font-size: 14px;
+        }
+
+        &_admin {
+            margin-right: 45px;
+
+            &_avatar {
+                @include square(120px);
+            }
+
+            &_name {
+                font-size: 20px;
+            }
+
+            &_title {
+                font-size: 13px;
+            }
+
+            &_phone {
+                font-size: 20px;
+            }
+        }
+    } 
+}
+
+@media screen and (max-width: $phone-album-width) {
+    .contacts {
+        margin-top: 16px;
+        margin-bottom: 20px;
+        margin-left: $small-indent;
+        margin-right: $small-indent;
+
+        &_h {
+            font-size: 16px
+        }
+
+        &_hr {
+            width: 120px;
+        }
+
+        &_text {
+            margin-right: 20px;
+
+            font-size: 10px;
+        }
+
+        &_admin {
+            margin-right: 20px;
+
+            &_avatar {
+                @include square(90px);
+            }
+
+            &_name {
+                font-size: 16px;
+            }
+
+            &_title {
+                font-size: 10px;
+            }
+
+            &_phone {
+                font-size: 16px;
+            }
+        }
+    } 
+}
