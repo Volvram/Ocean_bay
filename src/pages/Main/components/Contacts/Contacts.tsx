@@ -6,7 +6,7 @@ import styles from "./styles.module.scss";
 
 const Contacts: React.FC = () => {
   return (
-    <div className={styles.contacts}>
+    <div id="contacts" className={styles.contacts}>
       <div>
         <div className={styles.contacts_h}>КОНТАКТЫ</div>
         <hr className={styles.contacts_hr} />

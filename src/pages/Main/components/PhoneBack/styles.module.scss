@@ -1,0 +1,140 @@
+@import "@styles/variables.scss";
+
+.phoneBack {
+    position: relative;
+
+    padding-top: 50px;
+    padding-bottom: 90px;
+
+    padding-left: $big-indent;
+    padding-right: $big-indent;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    &_questions {
+        color: $white-color;
+
+        font-family: $cormorantSC;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+    }
+
+    &_h {
+        color: $white-color;
+
+        font-family: $cormorantSC;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 34px;
+    }
+
+    &_form {
+        padding-top: 50px;
+
+        width: fit-content;
+
+        display: flex;
+        flex-direction: column;
+
+        &_input {
+            margin-bottom: 40px;
+            padding: 15px 24px;
+
+            width: 430px;
+    
+            background-color: $white-color;
+
+            border: 1px solid #636363;
+            border-radius: 4px;
+        }
+
+        &_submit {
+            padding: 15px 24px;
+
+            box-sizing: content-box;
+
+            width: 430px;
+
+            color: $white-color;
+    
+            background-color: $light-blue-color;
+
+            border: 1px solid #636363;
+            border-radius: 4px;
+        }
+    }
+}
+
+@media screen and (max-width: $tablet-album-width) {
+    .phoneBack {
+        padding-top: 25px;
+        padding-bottom: 45px;
+
+        padding-left: $average-indent;
+        padding-right: $average-indent;
+
+        &_questions {
+            font-size: 16px;
+        }
+
+        &_h {
+            font-size: 26px;
+        }
+
+        &_form {
+            padding-top: 25px;
+
+            &_input {
+                margin-bottom: 30px;
+
+                padding: 12px 18px;
+
+                width: 300px;
+            }
+
+            &_submit {
+                padding: 12px 18px;
+
+                width: 300px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $phone-album-width) {
+    .phoneBack {
+        padding-top: 12px;
+        padding-bottom: 20px;
+
+        padding-left: $small-indent;
+        padding-right: $small-indent;
+
+        &_questions {
+            font-size: 12px;
+        }
+
+        &_h {
+            font-size: 16px;
+        }
+
+        &_form {
+            padding-top: 12px;
+
+            &_input {
+                margin-bottom: 20px;
+
+                padding: 6px 9px;
+
+                width: 200px;
+            }
+
+            &_submit {
+                padding: 12px 18px;
+
+                width: 200px;
+            }
+        }
+    }
+}

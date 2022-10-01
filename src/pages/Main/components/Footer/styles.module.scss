@@ -1,0 +1,19 @@
+@import "@styles/variables.scss";
+
+.footer {
+  margin-top: 80px;
+
+  height: 100px;
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(5, 80, 149, 0.6) 100%
+    ),
+    linear-gradient(
+      180deg,
+      rgba(0, 191, 226, 0.6) 0%,
+      rgba(1, 90, 107, 0.39) 45.88%,
+      rgba(0, 0, 0, 0) 98.41%
+    ),
+    #12628e;
+}

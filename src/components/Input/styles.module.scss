@@ -1,0 +1,9 @@
+@import "@styles/variables.scss";
+
+.input {
+  font-family: $comfortaa;
+
+  &__disabled {
+    opacity: 0.5;
+  }
+}

@@ -3,10 +3,10 @@
 .yachtOffers {
     display: flex;
 
+    width: 100%;
+
     &_offer {
         position: relative;
-
-        max-width: fit-content;
 
         font-family: $comfortaa;
         font-style: normal;

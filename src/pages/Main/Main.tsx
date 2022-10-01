@@ -5,6 +5,8 @@ import { useLocation } from "react-router-dom";
 import AboutUs from "./components/AboutUs/AboutUs";
 import Assortment from "./components/Assortment/Assortment";
 import Contacts from "./components/Contacts/Contacts";
+import Footer from "./components/Footer/Footer";
+import PhoneBack from "./components/PhoneBack/PhoneBack";
 import Reservation from "./components/Reservation/Reservation";
 import TopBackground from "./components/TopBackground/TopBackground";
 
@@ -31,6 +33,8 @@ const Main: React.FC = () => {
       <Reservation />
       <Assortment />
       <Contacts />
+      <PhoneBack />
+      <Footer />
     </div>
   );
 };
