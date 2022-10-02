@@ -35,7 +35,7 @@ const Header: React.FC = () => {
         </div>
       </div>
       <div className={styles.header_phone}>
-        <a href="tel: +79096353022" className={styles.header_phone_a}>
+        <a href="tel:+7(909)-635-30-22" className={styles.header_phone_a}>
           +7(909)-635-30-22
         </a>
       </div>

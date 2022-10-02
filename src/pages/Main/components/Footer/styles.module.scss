@@ -3,7 +3,8 @@
 .footer {
   margin-top: 80px;
 
-  height: 100px;
+  padding: 25px $big-indent;
+
   background: linear-gradient(
       180deg,
       rgba(0, 0, 0, 0) 0%,
@@ -16,4 +17,90 @@
       rgba(0, 0, 0, 0) 98.41%
     ),
     #12628e;
+
+    font-family: $comfortaa;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+
+    display: flex;
+    justify-content: space-between;
+
+    &_contacts {
+
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      &_link {
+        text-decoration: none;
+      }
+
+      &_element {
+        list-style: none;
+        
+        color: $white-color;
+
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+    }
+
+    &_info {
+
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      
+      &_element {
+        list-style: none;
+
+        color: $white-color;
+
+        margin-top: 5px;
+        margin-bottom: 5px;
+      }
+    }
+}
+
+@media screen and (max-width: $tablet-album-width) {
+  .footer {
+    padding: 25px $average-indent;
+
+    font-size: 13px;
+
+    &_contacts {
+
+      &_element {
+        margin-top: 5px;
+        margin-bottom: 5px;
+      }
+    }
+
+    &_info {
+
+      &_element {
+        margin-top: 5px;
+        margin-bottom: 5px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $tablet-portrait-width) {
+  .footer {
+    flex-direction: column;
+
+    &_info {
+      margin-top: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: $phone-album-width) {
+  .footer {
+    padding: 25px $small-indent;
+
+    font-size: 10px;
+  }
 }
