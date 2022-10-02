@@ -3,10 +3,10 @@
 .yachtOffers {
     display: flex;
 
-    width: 100%;
-
     &_offer {
         position: relative;
+
+        height: fit-content;
 
         font-family: $comfortaa;
         font-style: normal;
@@ -15,14 +15,20 @@
 
         color: $white-color;
 
+        flex-grow: 1;
+
+        &_average {
+            flex-grow: 1.56; 
+        }
+
         &_img {
             width: 100%;
         }
 
         &_price {
             position: absolute;
-            top: 28px;
-            right: 30px;
+            top: 30px;
+            right: 40px;
     
             &__dark {
                 color: $dark-brown-color;
@@ -32,13 +38,13 @@
         &_model {
             position: absolute;
             left: 24px;
-            bottom: 70px;
+            bottom: 80px;
         }
 
         &_made {
             position: absolute;
             left: 24px;
-            bottom: 40px;
+            bottom: 50px;
 
             display:flex;
 
@@ -62,7 +68,7 @@
         &_offer {
 
             &_price {
-                top: 14px;
+                top: 20px;
                 right: 15px;
             }
 

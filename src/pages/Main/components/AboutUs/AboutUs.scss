@@ -9,9 +9,14 @@
     
 
     font-family: $cormorantSC;
-    font-size: 19px;
+    font-size: 23px;
 }
 
+@media screen and (max-width: $desktop-width) {
+    #aboutUs {
+        font-size: 19px;
+    }
+}
 @media screen and (max-width: $tablet-album-width) {
     #aboutUs {
         margin-left: $average-indent;

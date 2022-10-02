@@ -10,7 +10,9 @@ const YachtOffers: React.FC = () => {
   return (
     <>
       <div className={styles.yachtOffers}>
-        <div className={styles.yachtOffers_offer}>
+        <div
+          className={`${styles.yachtOffers_offer} ${styles.yachtOffers_offer_average}`}
+        >
           <img
             src={averageYacht}
             className={styles.yachtOffers_offer_img}

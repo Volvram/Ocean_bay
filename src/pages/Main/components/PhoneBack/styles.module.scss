@@ -3,8 +3,8 @@
 .phoneBack {
     position: relative;
 
-    padding-top: 50px;
-    padding-bottom: 90px;
+    padding-top: 160px;
+    padding-bottom: 200px;
 
     padding-left: $big-indent;
     padding-right: $big-indent;
@@ -67,10 +67,17 @@
     }
 }
 
+@media screen and (max-width: $desktop-width) {
+    .phoneBack {
+        padding-top: 100px;
+        padding-bottom: 140px;
+    }
+}
+
 @media screen and (max-width: $tablet-album-width) {
     .phoneBack {
-        padding-top: 25px;
-        padding-bottom: 45px;
+        padding-top: 50px;
+        padding-bottom: 90px;
 
         padding-left: $average-indent;
         padding-right: $average-indent;
