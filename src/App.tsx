@@ -1,6 +1,7 @@
 import React from "react";
 
 import Main from "@pages/Main/Main";
+import Yacht from "@pages/Yacht/Yacht";
 import { Routes, Route, Navigate } from "react-router-dom";
 
 import "./App.scss";
@@ -11,7 +12,7 @@ const App: React.FC = () => {
       <Routes>
         <Route path="/" element={<Main />} />
         <Route path="/yacht">
-          <Route path=":id" />
+          <Route path=":id" element={<Yacht />} />
         </Route>
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>

@@ -1,5 +1,6 @@
 import React from "react";
 
+import logo from "@assets/img/logoOceanBay.svg";
 import { Link } from "react-router-dom";
 
 import styles from "./styles.module.scss";
@@ -7,8 +8,8 @@ import styles from "./styles.module.scss";
 const Header: React.FC = () => {
   return (
     <div className={styles.header}>
+      <img src={logo} alt="ocean bay" className={styles.header_logo} />
       <div className={styles.header_menu}>
-        <img alt="ocean bay" className={styles.header_menu_logo}></img>
         <div className={styles.header_menu_choice}>
           <Link
             to={{ pathname: "/", hash: "aboutUs" }}

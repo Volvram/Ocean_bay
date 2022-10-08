@@ -1,11 +1,13 @@
 @import "@styles/variables.scss";
 
 .header {
-    margin-left: $big-indent;
+    margin-left: 45px;
     margin-right: $big-indent;
 
     padding-top: 34px;
     padding-bottom: 34px;
+
+    max-height: 100px;
 
     display: flex;
     justify-content: flex-start;
@@ -13,14 +15,14 @@
 
     font-family: $comfortaa;
 
+    &_logo {
+        width: 216px;
+    }
+
     &_menu {
         display:flex;
         justify-content: space-between;
         align-items: center;
-
-        &_logo {
-            margin-right:20px;
-        }
 
         &_choice {
             margin-left:21px;
@@ -46,10 +48,16 @@
 
 @media screen and (max-width: $tablet-album-width) {
     .header {
-        margin-left: $average-indent;
+        margin-left: 35px;
         margin-right: $average-indent;
 
+        max-height: 80px;
+
         font-size: 12px;
+
+        &_logo {
+            width: 180px;
+        }
 
         &_menu {
 
@@ -62,13 +70,19 @@
 }
 @media screen and (max-width: $tablet-portrait-width) {
     .header {
-        margin-left: 20px;
+        margin-left: $small-indent;
         margin-right: 20px;
 
         padding-top: 20px;
         padding-bottom: 20px;
 
+        max-height: 60px;
+
         font-size: 10px;
+
+        &_logo {
+            width: 130px;
+        }
 
         &_menu {
 
@@ -82,19 +96,21 @@
 
 @media screen and (max-width: $phone-album-width) {
     .header {
-        margin-left: $small-indent;
+        margin-left: 8px;
         margin-right: $small-indent;
+
+        max-height: 40px;
 
         padding-top: 16px;
         padding-bottom: 16px;
 
         font-size: 8px;
 
-        &_menu {
+        &_logo {
+            width: 100px;
+        }
 
-            &_logo {
-                margin-right:8px;
-            }
+        &_menu {
 
             &_choice {
                 margin-left: 4px;
