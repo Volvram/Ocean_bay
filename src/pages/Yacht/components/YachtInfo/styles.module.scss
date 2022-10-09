@@ -62,6 +62,7 @@
             display: flex;
 
             &_value {
+                text-align: right;
                 margin-left: auto;
             }
 
@@ -72,6 +73,70 @@
     }
 }
 
-@media screen and (max-width: $tablet-album-width) {
+@media screen and (max-width: $tablet-portrait-width) {
+    .yachtInfo {
+        margin-top: 240px;
+        margin-left: $average-indent;
+        margin-right: $average-indent;
+
+        &_main {
+
+            &_model {
+                font-size: 22px;
+            }
     
+            &_made {
+                font-size: 18px;
+            }
+        }
+
+        &_character{
+            margin-top: 60px;
+            
+            &_h {
+                margin-bottom: 20px;
+            }
+    
+            &_element{
+                padding-top: 14px;
+                padding-bottom: 14px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $phone-album-width) {
+    .yachtInfo {
+        margin-top: 190px;
+        margin-left: $small-indent;
+        margin-right: $small-indent;
+
+        &_main {
+
+            &_model {
+                font-size: 18px;
+            }
+    
+            &_made {
+                font-size: 14px;
+            }
+        }
+
+        &_character{
+            margin-top: 50px;
+            
+            &_h {
+                margin-bottom: 16px;
+
+                font-size: 16px;
+            }
+    
+            &_element{
+                padding-top: 14px;
+                padding-bottom: 14px;
+
+                font-size: 12px;
+            }
+        }
+    }
 }

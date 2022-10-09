@@ -6,6 +6,7 @@ import { useParams } from "react-router-dom";
 
 import AlterHeader from "./components/AlterHeader/AlterHeader";
 import YachtInfo from "./components/YachtInfo/YachtInfo";
+import YachtPhoto from "./components/YachtPhoto/YachtPhoto";
 
 const Yacht: React.FC = () => {
   const { id } = useParams();
@@ -15,6 +16,7 @@ const Yacht: React.FC = () => {
   return (
     <>
       <AlterHeader />
+      <YachtPhoto />
       <YachtInfo yacht={yacht} />
       <Footer />
     </>
