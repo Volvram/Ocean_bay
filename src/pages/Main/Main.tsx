@@ -30,7 +30,7 @@ const Main: React.FC = () => {
   }, [hash]);
 
   return (
-    <div>
+    <>
       <TopBackground />
       <AboutUs />
       <Reservation />
@@ -38,7 +38,7 @@ const Main: React.FC = () => {
       <Contacts />
       <PhoneBack />
       <Footer />
-    </div>
+    </>
   );
 };
 

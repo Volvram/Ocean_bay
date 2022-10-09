@@ -11,6 +11,18 @@ export type YachtsData = {
   year: number;
   place: string;
   best: boolean;
+  constructionMaterial: string;
+  grossTonage: string;
+  overallLength: string;
+  width: string;
+  draft: string;
+  maxSpeed: string;
+  powerReserve: string;
+  displacement: string;
+  beds: string;
+  cabins: string;
+  interiorDesign: string;
+  concept: string;
 };
 
 export const YACHTS: YachtsData[] = [
@@ -23,6 +35,18 @@ export const YACHTS: YachtsData[] = [
     year: 2022,
     place: "Италия",
     best: false,
+    constructionMaterial: "Сталь | Алюминий",
+    grossTonage: "1650 т",
+    overallLength: "68.00 м",
+    width: "12.10 м",
+    draft: "3.30 м",
+    maxSpeed: "16.00 узл",
+    powerReserve: "5000.00 м",
+    displacement: "1500.00 т",
+    beds: "16 + 25",
+    cabins: "8 + 14",
+    interiorDesign: "Benetti Interior Style Department",
+    concept: "RWD",
   },
   {
     id: 2,
@@ -33,6 +57,18 @@ export const YACHTS: YachtsData[] = [
     year: 2009,
     place: "Черное море",
     best: false,
+    constructionMaterial: "",
+    grossTonage: "",
+    overallLength: "",
+    width: "",
+    draft: "",
+    maxSpeed: "",
+    powerReserve: "",
+    displacement: "",
+    beds: "",
+    cabins: "",
+    interiorDesign: "",
+    concept: "",
   },
   {
     id: 3,
@@ -43,5 +79,17 @@ export const YACHTS: YachtsData[] = [
     year: 2017,
     place: "Хорватия",
     best: true,
+    constructionMaterial: "",
+    grossTonage: "",
+    overallLength: "",
+    width: "",
+    draft: "",
+    maxSpeed: "",
+    powerReserve: "",
+    displacement: "",
+    beds: "",
+    cabins: "",
+    interiorDesign: "",
+    concept: "",
   },
 ];

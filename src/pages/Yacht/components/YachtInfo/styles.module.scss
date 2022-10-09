@@ -1,0 +1,77 @@
+@import "@styles/variables.scss";
+
+.yachtInfo {
+    margin-top: 290px;
+    margin-left: $big-indent;
+    margin-right: $big-indent;
+
+    &_main {
+
+        &_model {
+            margin-bottom: 6px;
+
+            color: $black-color;
+
+            font-family: $montserrat;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 25px;
+        }
+
+        &_made {
+            color: $dark-grey-color;
+
+            display: flex;
+
+            font-family: $montserrat;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+
+            &_place {
+                margin-left: 30px;
+            }
+        }
+    }
+
+    &_character{
+        margin-top: 80px;
+        
+        &_h {
+            margin-bottom: 32px;
+
+            font-family: $montserrat;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 19px;
+        }
+
+        &_element{
+            padding-top: 16px;
+            padding-bottom: 16px;
+
+            max-width: 700px;
+
+            border-bottom: 1px solid $light-grey-color;
+
+            font-family: $montserrat;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 15px;
+
+            display: flex;
+
+            &_value {
+                margin-left: auto;
+            }
+
+            &__last {
+                border: 0px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $tablet-album-width) {
+    
+}

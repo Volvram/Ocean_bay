@@ -1,23 +1,23 @@
 import React from "react";
 
 import { YACHTS } from "@config/yachts";
-import { Link, useParams } from "react-router-dom";
+import Footer from "@pages/Main/components/Footer/Footer";
+import { useParams } from "react-router-dom";
 
 import AlterHeader from "./components/AlterHeader/AlterHeader";
+import YachtInfo from "./components/YachtInfo/YachtInfo";
 
 const Yacht: React.FC = () => {
   const { id } = useParams();
 
-  const currentYacht = YACHTS.find((yacht) => String(yacht.id) === id);
+  const yacht = YACHTS.find((yacht) => String(yacht.id) === id);
 
   return (
-    <div>
+    <>
       <AlterHeader />
-      Это страница с яхтой id: {id}
-      <Link to={`/`}>
-        <div>Вернуться</div>
-      </Link>
-    </div>
+      <YachtInfo yacht={yacht} />
+      <Footer />
+    </>
   );
 };
 
