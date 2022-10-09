@@ -22,6 +22,9 @@ const Main: React.FC = () => {
         const id = hash.replace("#", "");
         const element = document.getElementById(id);
         if (element) element.scrollIntoView({ behavior: "smooth" });
+        // eslint-disable-next-line no-restricted-globals
+        history.replaceState("", document.title, window.location.pathname);
+        hash = "";
       }, 0);
     }
   }, [hash]);

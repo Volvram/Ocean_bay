@@ -25,7 +25,9 @@ const BestYacht: React.FC = () => {
             <div className={styles.bestYachtOffer_offer_price}>
               {bestYacht.price}
             </div>
-            <div className={styles.bestYachtOffer_offer_bestOffer}>Лучшее предложение</div>
+            <div className={styles.bestYachtOffer_offer_bestOffer}>
+              Лучшее предложение
+            </div>
             <div className={styles.bestYachtOffer_offer_model}>
               {bestYacht.model}
             </div>
