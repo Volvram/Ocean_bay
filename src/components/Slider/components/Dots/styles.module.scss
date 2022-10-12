@@ -1,0 +1,23 @@
+@import "@styles/variables.scss";
+
+.dots {
+    display: flex;
+    justify-content: center;
+
+    &_dot {
+        margin-left: 3px;
+        margin-right: 3px;
+
+        cursor: pointer;
+
+        width: 10px;
+        height: 10px;
+
+        border: 1px solid $dark-blue-color;
+        border-radius: 50%;
+
+        &__selected {
+            background: $dark-blue-color;
+        }
+    }
+}

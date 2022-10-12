@@ -1,7 +1,7 @@
 @import "@styles/variables.scss";
 
 .yachtInfo {
-    margin-top: 290px;
+    margin-top: 400px;
     margin-left: $big-indent;
     margin-right: $big-indent;
 
@@ -73,6 +73,12 @@
     }
 }
 
+@media screen and (max-width: $desktop-width) {
+    .yachtInfo {
+        margin-top: 300px;
+    }
+}
+
 @media screen and (max-width: $tablet-portrait-width) {
     .yachtInfo {
         margin-top: 240px;
@@ -107,7 +113,7 @@
 
 @media screen and (max-width: $phone-album-width) {
     .yachtInfo {
-        margin-top: 190px;
+        margin-top: 140px;
         margin-left: $small-indent;
         margin-right: $small-indent;
 

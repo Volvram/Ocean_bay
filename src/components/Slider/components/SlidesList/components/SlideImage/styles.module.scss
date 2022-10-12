@@ -1,0 +1,20 @@
+@import "@styles/variables.scss";
+
+.slideImage {
+    display: flex;
+    margin: 0 auto;
+    width: 90%;
+    object-fit: contain;
+}
+
+@media screen and (max-width: $tablet-portrait-width) {
+    .slideImage {
+        width: 85%;
+    }
+}
+
+@media screen and (max-width: $phone-album-width) {
+    .slideImage {
+        width: 80%;
+    }
+}

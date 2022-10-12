@@ -42,7 +42,11 @@ const YachtInfo: React.FC<YachtInfoProps> = ({ yacht }) => {
                     {char[1]}
                   </div>
                   <div className={styles.yachtInfo_character_element_value}>
-                    {yacht[char[0] as keyof YachtsData]}
+                    {
+                      yacht.characteristics[
+                        char[0] as keyof typeof yacht.characteristics
+                      ]
+                    }
                   </div>
                 </div>
               );

@@ -16,7 +16,7 @@ const Yacht: React.FC = () => {
   return (
     <>
       <AlterHeader />
-      <YachtPhoto />
+      <YachtPhoto yacht={yacht} />
       <YachtInfo yacht={yacht} />
       <Footer />
     </>

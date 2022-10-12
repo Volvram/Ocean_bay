@@ -1,16 +1,11 @@
 import yacht_1 from "@assets/img/yacht_1.svg";
+import yacht_1_1 from "@assets/img/yacht_1_1.svg";
+import yacht_1_2 from "@assets/img/yacht_1_2.svg";
 import yacht_2 from "@assets/img/yacht_2.svg";
 import yacht_3 from "@assets/img/yacht_3.svg";
+import { ImageType } from "@store/SliderStore/SliderStore";
 
-export type YachtsData = {
-  id: number;
-  image: string;
-  price: string;
-  priceColor: string;
-  model: string;
-  year: number;
-  place: string;
-  best: boolean;
+export type YachtCharacteristics = {
   constructionMaterial: string;
   grossTonage: string;
   overallLength: string;
@@ -25,6 +20,19 @@ export type YachtsData = {
   concept: string;
 };
 
+export type YachtsData = {
+  id: number;
+  image: string;
+  price: string;
+  priceColor: string;
+  model: string;
+  year: number;
+  place: string;
+  best: boolean;
+  characteristics: YachtCharacteristics;
+  additionalImages: ImageType[];
+};
+
 export const YACHTS: YachtsData[] = [
   {
     id: 1,
@@ -35,18 +43,31 @@ export const YACHTS: YachtsData[] = [
     year: 2022,
     place: "Италия",
     best: false,
-    constructionMaterial: "Сталь | Алюминий",
-    grossTonage: "1650 т",
-    overallLength: "68.00 м",
-    width: "12.10 м",
-    draft: "3.30 м",
-    maxSpeed: "16.00 узл",
-    powerReserve: "5000.00 м",
-    displacement: "1500.00 т",
-    beds: "16 + 25",
-    cabins: "8 + 14",
-    interiorDesign: "Benetti Interior Style Department",
-    concept: "RWD",
+    characteristics: {
+      constructionMaterial: "Сталь | Алюминий",
+      grossTonage: "1650 т",
+      overallLength: "68.00 м",
+      width: "12.10 м",
+      draft: "3.30 м",
+      maxSpeed: "16.00 узл",
+      powerReserve: "5000.00 м",
+      displacement: "1500.00 т",
+      beds: "16 + 25",
+      cabins: "8 + 14",
+      interiorDesign: "Benetti Interior Style Department",
+      concept: "RWD",
+    },
+
+    additionalImages: [
+      {
+        url: yacht_1_1,
+        title: "",
+      },
+      {
+        url: yacht_1_2,
+        title: "",
+      },
+    ],
   },
   {
     id: 2,
@@ -57,18 +78,26 @@ export const YACHTS: YachtsData[] = [
     year: 2009,
     place: "Черное море",
     best: false,
-    constructionMaterial: "",
-    grossTonage: "",
-    overallLength: "",
-    width: "",
-    draft: "",
-    maxSpeed: "",
-    powerReserve: "",
-    displacement: "",
-    beds: "",
-    cabins: "",
-    interiorDesign: "",
-    concept: "",
+    characteristics: {
+      constructionMaterial: "",
+      grossTonage: "",
+      overallLength: "",
+      width: "",
+      draft: "",
+      maxSpeed: "",
+      powerReserve: "",
+      displacement: "",
+      beds: "",
+      cabins: "",
+      interiorDesign: "",
+      concept: "",
+    },
+    additionalImages: [
+      {
+        url: "",
+        title: "",
+      },
+    ],
   },
   {
     id: 3,
@@ -79,17 +108,25 @@ export const YACHTS: YachtsData[] = [
     year: 2017,
     place: "Хорватия",
     best: true,
-    constructionMaterial: "",
-    grossTonage: "",
-    overallLength: "",
-    width: "",
-    draft: "",
-    maxSpeed: "",
-    powerReserve: "",
-    displacement: "",
-    beds: "",
-    cabins: "",
-    interiorDesign: "",
-    concept: "",
+    characteristics: {
+      constructionMaterial: "",
+      grossTonage: "",
+      overallLength: "",
+      width: "",
+      draft: "",
+      maxSpeed: "",
+      powerReserve: "",
+      displacement: "",
+      beds: "",
+      cabins: "",
+      interiorDesign: "",
+      concept: "",
+    },
+    additionalImages: [
+      {
+        url: "",
+        title: "",
+      },
+    ],
   },
 ];

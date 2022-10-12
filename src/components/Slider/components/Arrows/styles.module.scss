@@ -1,0 +1,56 @@
+@import "@styles/variables.scss";
+
+.arrows {
+    display: flex;
+    font-size: 30px;
+    justify-content: space-between;
+    height: fit-content;
+    position: absolute;
+    top: 45%;
+    width: 100%;
+    z-index: 1;
+
+    &_arrow {
+      height: 30px;
+      width: 30px;
+
+      &__left {
+        cursor: pointer;
+
+        width:fit-content;
+        height: fit-content;
+
+        color: $black-color;
+        // background-image: url(../../../assets/icons/arrow.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin-left: 5px;
+        // transform: rotate(180deg);
+      }
+
+      &__right {
+        cursor: pointer;
+
+        width:fit-content;
+        height: fit-content;
+
+        color: $black-color;
+        // background-image: url(../../../assets/icons/arrow.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin-right: 5px;
+      }
+    }
+  }
+
+@media screen and (max-width: $tablet-portrait-width) {
+  .arrows {
+    top: 40%;
+  }
+}
+
+@media screen and (max-width: $phone-album-width) {
+  .arrows {
+    top: 35%;
+  }
+}

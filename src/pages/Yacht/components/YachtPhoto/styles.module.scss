@@ -1,0 +1,37 @@
+@import "@styles/variables.scss";
+
+.yachtPhoto {
+    top: 150px;
+    left: 50%; /* position the left edge of the element at the middle of the parent */
+
+    width: 850px;
+
+    transform: translateX(-50%);
+    position: absolute;
+}
+
+@media screen and (max-width: $desktop-width) {
+    .yachtPhoto {
+        width: 700px;
+    }
+}
+
+@media screen and (max-width: $tablet-album-width) {
+    .yachtPhoto {
+        width: 600px;
+    }
+}
+
+@media screen and (max-width: $tablet-portrait-width) {
+    .yachtPhoto {
+        top: 100px;
+        width: 470px;
+    }
+}
+
+@media screen and (max-width: $phone-album-width) {
+    .yachtPhoto {
+        top: 80px;
+        width: 300px;
+    }
+}

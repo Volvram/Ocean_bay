@@ -1,0 +1,13 @@
+@import "@styles/variables.scss";
+
+.slideList {
+    display: flex;
+    height: 100%;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+
+    &_slide {
+        flex: 1 0 100%;
+        position: relative;
+    }
+}
