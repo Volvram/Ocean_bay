@@ -49,7 +49,13 @@ const Slider: React.FC<SliderProps> = ({
     return () => {
       clearInterval(interval);
     };
-  }, [sliderStore.items.length, sliderStore.slide]); // when images uploaded or slide changed manually we start timer
+  }, [
+    sliderStore.items.length,
+    sliderStore.slide,
+    autoPlay,
+    autoPlayTime,
+    sliderStore,
+  ]); // when images uploaded or slide changed manually we start timer
 
   return (
     <div

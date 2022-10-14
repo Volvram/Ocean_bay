@@ -115,6 +115,10 @@
             &_choice {
                 margin-left: 4px;
                 margin-right: 3px;
+
+                &_link {
+                    color: $white-color;
+                }
             }
         }
 

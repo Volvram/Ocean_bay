@@ -13,6 +13,10 @@ const Yacht: React.FC = () => {
 
   const yacht = YACHTS.find((yacht) => String(yacht.id) === id);
 
+  React.useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <>
       <AlterHeader />

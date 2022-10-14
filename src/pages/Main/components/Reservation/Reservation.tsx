@@ -2,6 +2,7 @@ import React from "react";
 
 import reservationBackground from "@assets/img/reservationBackground.svg";
 import Button from "@components/Button";
+import { Link } from "react-router-dom";
 
 import styles from "./styles.module.scss";
 
@@ -12,7 +13,9 @@ const Reservation: React.FC = () => {
       style={{ backgroundImage: `url(${reservationBackground})` }}
     >
       <div className={styles.reservation_h}>СВОБОДА. ПАРУС. OCEAN BAY.</div>
-      <Button className={styles.reservation_button}>ЗАБРОНИРОВАТЬ</Button>
+      <Link to={{ pathname: "/", hash: "contacts" }}>
+        <Button className={styles.reservation_button}>ЗАБРОНИРОВАТЬ</Button>
+      </Link>
       <hr className={styles.reservation_hr} />
       <div className={styles.reservation_text}>
         Вскипание с HCl поступательно окисляет фронт, что дает возможность

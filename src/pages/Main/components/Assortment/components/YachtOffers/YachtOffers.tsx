@@ -47,7 +47,7 @@ const YachtOffers: React.FC = () => {
               </Link>
             );
           }
-          return;
+          return <React.Fragment key={yacht.id} />;
         })}
       </div>
       <BestYacht />
