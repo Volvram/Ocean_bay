@@ -4,8 +4,8 @@ import { makeObservable, observable, action, computed } from "mobx";
 type PrivateFields = "_name" | "_phone" | "_submitted";
 
 class PhoneBackStore implements ILocalStore {
-  private _name = "";
-  private _phone = "";
+  private _name: string | null = null;
+  private _phone: string | null = null;
   private _submitted = false;
 
   constructor() {
@@ -22,7 +22,7 @@ class PhoneBackStore implements ILocalStore {
     });
   }
 
-  setName(name: string) {
+  setName(name: string | null) {
     this._name = name;
   }
 
@@ -30,7 +30,7 @@ class PhoneBackStore implements ILocalStore {
     return this._name;
   }
 
-  setPhone(phone: string) {
+  setPhone(phone: string | null) {
     this._phone = phone;
   }
 

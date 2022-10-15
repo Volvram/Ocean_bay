@@ -12,21 +12,17 @@ import styles from "./styles.module.scss";
 const PhoneBack: React.FC = () => {
   const phoneBackStore = useLocalStore(() => new PhoneBackStore());
 
-  const handleNameInput = React.useCallback(
-    (value: string) => {
-      phoneBackStore.setName(value);
-    },
-    [phoneBackStore]
-  );
+  const handleNameInput = React.useCallback((value: string) => {
+    localStorage.setItem("name", value);
+  }, []);
 
-  const handlePhoneInput = React.useCallback(
-    (value: string) => {
-      phoneBackStore.setPhone(value);
-    },
-    [phoneBackStore]
-  );
+  const handlePhoneInput = React.useCallback((value: string) => {
+    localStorage.setItem("phone", value);
+  }, []);
 
   const handleSubmit = React.useCallback(() => {
+    phoneBackStore.setName(localStorage.getItem("name"));
+    phoneBackStore.setPhone(localStorage.getItem("phone"));
     phoneBackStore.setSubmitted(true);
   }, [phoneBackStore]);
 
