@@ -42,7 +42,15 @@ const YachtPhoto: React.FC<YachtsPhotoProps> = ({ yacht }) => {
   return (
     <div className={styles.yachtPhoto}>
       {yacht && (
-        <Carousel wrapAround={true} slidesToShow={yachtPhotoStore.slides}>
+        <Carousel
+          wrapAround={true}
+          slidesToShow={yachtPhotoStore.slides}
+          defaultControlsConfig={{
+            pagingDotsStyle: {
+              fill: "#ffffff",
+            },
+          }}
+        >
           {yacht.additionalImages.map((item) => {
             return (
               <img
