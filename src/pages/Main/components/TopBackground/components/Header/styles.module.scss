@@ -32,6 +32,10 @@
                 color: $black-color;
                 text-decoration: none;
             }
+
+            &_link:hover {
+                color: $white-color;
+            }
         }
     }
 

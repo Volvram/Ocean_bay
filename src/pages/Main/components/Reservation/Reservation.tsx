@@ -12,16 +12,15 @@ const Reservation: React.FC = () => {
       className={styles.reservationBackground}
       style={{ backgroundImage: `url(${reservationBackground})` }}
     >
-      <div className={styles.reservation_h}>СВОБОДА. ПАРУС. OCEAN BAY.</div>
+      <div className={styles.reservation_h}>СВОБОДА. ЭМОЦИИ. OCEAN BAY.</div>
       <Link to={{ pathname: "/", hash: "contacts" }}>
         <Button className={styles.reservation_button}>ЗАБРОНИРОВАТЬ</Button>
       </Link>
       <hr className={styles.reservation_hr} />
       <div className={styles.reservation_text}>
-        Вскипание с HCl поступательно окисляет фронт, что дает возможность
-        использования данной методики как универсальной. Вскипание с HCl,
-        вследствие пространственной неоднородности почвенного покрова,
-        традиционно переносит карбонат кальция.
+        Мы предлагаем яхты с роскошным, простым и элегантным интерьером.
+        Выберите яхту по вкусу, которую можете взять в аренду на любой срок от 7
+        дней. Отличный сервис, внимание к мельчайшим деталям и вашим пожеланиям.
       </div>
     </div>
   );

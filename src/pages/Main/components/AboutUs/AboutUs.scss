@@ -14,14 +14,17 @@
 
 @media screen and (max-width: $desktop-width) {
     #aboutUs {
+        padding-top: 24px;
+        padding-bottom: 32px;
+
         font-size: 19px;
     }
 }
 @media screen and (max-width: $tablet-album-width) {
     #aboutUs {
         margin-left: $average-indent;
-        padding-top: 32px;
-        padding-bottom: 32px;
+        padding-top: 12px;
+        padding-bottom: 20px;
 
         font-size: 12px;
     }
