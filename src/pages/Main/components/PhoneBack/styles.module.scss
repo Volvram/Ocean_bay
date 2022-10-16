@@ -9,6 +9,8 @@
     padding-left: $big-indent;
     padding-right: $big-indent;
 
+    min-height: 500px;
+
     background-size: cover;
     background-repeat: no-repeat;
 
@@ -17,7 +19,6 @@
 
         font-family: $cormorantSC;
         font-style: normal;
-        font-weight: 400;
         font-size: 20px;
     }
 
@@ -26,8 +27,26 @@
 
         font-family: $cormorantSC;
         font-style: normal;
-        font-weight: 600;
         font-size: 34px;
+    }
+
+    &__submitted {
+
+        &_h {
+            color: $white-color;
+
+            font-family: $cormorantSC;
+            font-style: normal;
+            font-size: 37px;
+        }
+
+        &_communication {
+            color: $white-color;
+
+            font-family: $cormorantSC;
+            font-style: normal;
+            font-size: 25px;
+        }
     }
 
     &_form {
@@ -63,17 +82,6 @@
 
             border: 1px solid #636363;
             border-radius: 4px;
-
-            &__submitted {
-                margin-top: 40px;
-                margin-left: auto;
-                margin-right: auto;
-
-                color: $white-color;
-
-                font-family: $comfortaa;
-                font-size: 20px;
-            }
         }
     }
 }
@@ -90,6 +98,8 @@
         padding-top: 50px;
         padding-bottom: 90px;
 
+        min-height: 300px;
+
         padding-left: $average-indent;
         padding-right: $average-indent;
 
@@ -99,6 +109,17 @@
 
         &_h {
             font-size: 26px;
+        }
+
+        &__submitted {
+
+            &_h {
+                font-size: 26px;
+            }
+    
+            &_communication {
+                font-size: 16px;
+            }
         }
 
         &_form {
@@ -116,12 +137,6 @@
                 padding: 12px 18px;
 
                 width: 300px;
-
-                &__submitted {
-                    margin-top: 30px;
-    
-                    font-size: 20px;
-                }
             }
         }
     }
@@ -132,6 +147,8 @@
         padding-top: 12px;
         padding-bottom: 20px;
 
+        min-height: 150px;
+
         padding-left: $small-indent;
         padding-right: $small-indent;
 
@@ -141,6 +158,17 @@
 
         &_h {
             font-size: 16px;
+        }
+
+        &__submitted {
+
+            &_h {
+                font-size: 16px;
+            }
+    
+            &_communication {
+                font-size: 12px;
+            }
         }
 
         &_form {
@@ -158,12 +186,6 @@
                 padding: 6px 9px;
 
                 width: 200px;
-
-                &__submitted {
-                    margin-top: 20px;
-    
-                    font-size: 16px;
-                }
             }
         }
     }

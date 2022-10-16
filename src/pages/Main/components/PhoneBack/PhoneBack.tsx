@@ -31,31 +31,43 @@ const PhoneBack: React.FC = () => {
       className={styles.phoneBack}
       style={{ backgroundImage: `url(${phoneBackBackground})` }}
     >
-      <div className={styles.phoneBack_questions}>Остались вопросы?</div>
-      <div className={styles.phoneBack_h}>
-        Оставьте заявку на обратный звонок!
-      </div>
-      <div className={styles.phoneBack_form}>
-        <Input
-          className={styles.phoneBack_form_input}
-          onChange={handleNameInput}
-          placeholder="Имя"
-        />
-        <Input
-          className={styles.phoneBack_form_input}
-          onChange={handlePhoneInput}
-          type="tel"
-          placeholder="Телефон"
-        />
-        <Button className={styles.phoneBack_form_submit} onClick={handleSubmit}>
-          ОТПРАВИТЬ
-        </Button>
-        {phoneBackStore.submitted && (
-          <div className={styles.phoneBack_form_submit__submitted}>
-            Форма успешно отправлена
+      {!phoneBackStore.submitted && (
+        <>
+          <div className={styles.phoneBack_questions}>Остались вопросы?</div>
+          <div className={styles.phoneBack_h}>
+            Оставьте заявку на обратный звонок!
           </div>
-        )}
-      </div>
+          <div className={styles.phoneBack_form}>
+            <Input
+              className={styles.phoneBack_form_input}
+              onChange={handleNameInput}
+              placeholder="Имя"
+            />
+            <Input
+              className={styles.phoneBack_form_input}
+              onChange={handlePhoneInput}
+              type="tel"
+              placeholder="Телефон"
+            />
+            <Button
+              className={styles.phoneBack_form_submit}
+              onClick={handleSubmit}
+            >
+              ОТПРАВИТЬ
+            </Button>
+          </div>
+        </>
+      )}
+      {phoneBackStore.submitted && (
+        <>
+          <div className={styles.phoneBack__submitted_h}>
+            Ваша заявка успешно отправлена!
+          </div>
+          <div className={styles.phoneBack__submitted_communication}>
+            Наш специалист свяжется с Вами в течение 10 минут
+          </div>
+        </>
+      )}
     </div>
   );
 };
