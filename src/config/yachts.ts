@@ -1,6 +1,8 @@
 import yacht_1 from "@assets/img/yacht_1.svg";
 import yacht_1_1 from "@assets/img/yacht_1_1.svg";
 import yacht_1_2 from "@assets/img/yacht_1_2.svg";
+import yacht_1_3 from "@assets/img/yacht_1_3.svg";
+import yacht_1_4 from "@assets/img/yacht_1_4.svg";
 import yacht_2 from "@assets/img/yacht_2.svg";
 import yacht_3 from "@assets/img/yacht_3.svg";
 import { ImageType } from "@store/SliderStore/SliderStore";
@@ -65,6 +67,14 @@ export const YACHTS: YachtsData[] = [
       },
       {
         url: yacht_1_2,
+        title: "",
+      },
+      {
+        url: yacht_1_3,
+        title: "",
+      },
+      {
+        url: yacht_1_4,
         title: "",
       },
     ],

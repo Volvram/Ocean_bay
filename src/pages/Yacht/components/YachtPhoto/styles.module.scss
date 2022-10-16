@@ -4,34 +4,57 @@
     top: 150px;
     left: 50%; /* position the left edge of the element at the middle of the parent */
 
-    width: 1000px;
+    width: 1240px;
+    height: 500px;
 
     transform: translateX(-50%);
     position: absolute;
+
+    &_img {
+        height: 430px;
+    }
 }
 
 @media screen and (max-width: $desktop-width) {
     .yachtPhoto {
-        width: 700px;
+        width: 980px;
+        height: 400px;
+
+        &_img {
+            height: 340px;
+        }
     }
 }
 
 @media screen and (max-width: $tablet-album-width) {
     .yachtPhoto {
-        width: 600px;
+        width: 800px;
+        height: 330px;
+
+        &_img {
+            height: 280px;
+        }
     }
 }
 
 @media screen and (max-width: $tablet-portrait-width) {
     .yachtPhoto {
         top: 100px;
-        width: 470px;
+        width: 430px;
+
+        &_img {
+            height: 300px;
+        }
     }
 }
 
 @media screen and (max-width: $phone-album-width) {
     .yachtPhoto {
         top: 80px;
-        width: 300px;
+        width: 280px;
+
+        &_img {
+            height: 200px;
+        }
     }
 }
