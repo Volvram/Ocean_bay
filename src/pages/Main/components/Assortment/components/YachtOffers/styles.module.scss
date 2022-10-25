@@ -2,90 +2,10 @@
 
 .yachtOffers {
     display: flex;
-
-    &_offer {
-        position: relative;
-
-        height: fit-content;
-
-        font-family: $comfortaa;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 15px;
-
-        color: $white-color;
-
-        flex-grow: 1;
-
-        &_img {
-            width: 100%;
-        }
-
-        &_price {
-            position: absolute;
-            top: 30px;
-            right: 40px;
-    
-            &__dark {
-                color: $dark-brown-color;
-            }
-        }
-
-        &_model {
-            position: absolute;
-            left: 24px;
-            bottom: 80px;
-        }
-
-        &_made {
-            position: absolute;
-            left: 24px;
-            bottom: 50px;
-
-            display:flex;
-
-            &_place {
-                margin-left: 5px;
-            }
-        }
-    }
-}
-
-@media screen and (max-width: $tablet-album-width) {
-    .yachtOffers {
-        &_offer {
-            font-size: 12px;
-        }
-    }
-}
-
-@media screen and (max-width: $tablet-portrait-width) {
-    .yachtOffers {
-        &_offer {
-
-            &_price {
-                top: 20px;
-                right: 15px;
-            }
-
-            &_model {
-                left: 12px;
-                bottom: 35px;
-            }
-
-            &_made {
-                left: 12px;
-                bottom: 20px;
-            }
-        }
-    }
 }
 
 @media screen and (max-width: $phone-album-width) {
     .yachtOffers {
         flex-wrap: wrap;
-        &_offer {
-            font-size: 10px;
-        }
     }
 }

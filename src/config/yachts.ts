@@ -5,6 +5,7 @@ import yacht_1_3 from "@assets/img/yacht_1_3.svg";
 import yacht_1_4 from "@assets/img/yacht_1_4.svg";
 import yacht_2 from "@assets/img/yacht_2.svg";
 import yacht_3 from "@assets/img/yacht_3.svg";
+import yacht_1_video from "@assets/video/yacht_1.mp4";
 import { ImageType } from "@store/SliderStore/SliderStore";
 
 export type YachtCharacteristics = {
@@ -32,6 +33,7 @@ export type YachtsData = {
   place: string;
   best: boolean;
   characteristics: YachtCharacteristics;
+  video: string;
   additionalImages: ImageType[];
 };
 
@@ -59,6 +61,8 @@ export const YACHTS: YachtsData[] = [
       interiorDesign: "Benetti Interior Style Department",
       concept: "RWD",
     },
+
+    video: yacht_1_video,
 
     additionalImages: [
       {
@@ -102,6 +106,7 @@ export const YACHTS: YachtsData[] = [
       interiorDesign: "",
       concept: "",
     },
+    video: yacht_1_video,
     additionalImages: [
       {
         url: "",
@@ -132,6 +137,7 @@ export const YACHTS: YachtsData[] = [
       interiorDesign: "",
       concept: "",
     },
+    video: yacht_1_video,
     additionalImages: [
       {
         url: "",
