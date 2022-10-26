@@ -8,7 +8,7 @@ const onEntry = (entry: any) => {
   });
 };
 
-export const smoothAppearance = (element: Element | null = null) => {
+export const smoothAppearance = () => {
   const options = { threshold: [0.5] };
   const observer = new IntersectionObserver(onEntry, options);
   const elements = document.querySelectorAll(".element-animation");
