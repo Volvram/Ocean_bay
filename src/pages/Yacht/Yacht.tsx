@@ -1,6 +1,6 @@
 import React from "react";
 
-import { YACHTS } from "@config/yachts";
+import { YACHTS } from "@config/db/yachts";
 import Footer from "@pages/Main/components/Footer/Footer";
 import { useParams } from "react-router-dom";
 

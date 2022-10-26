@@ -13,11 +13,15 @@ const TopBackground: React.FC = () => {
     >
       <Header />
       <div className={styles.topBackground_intro}>
-        <div className={styles.topBackground_intro_title}>
+        <div
+          className={`${styles.topBackground_intro_title} element-animation`}
+        >
           ЯХТ-КЛУБ OCEAN BAY.
         </div>
-        <hr className={styles.topBackground_intro_hr}></hr>
-        <div className={styles.topBackground_intro_slogan}>
+        <hr className={styles.topBackground_intro_hr} />
+        <div
+          className={`${styles.topBackground_intro_slogan} element-animation`}
+        >
           МЫ РАБОТАЕМ РАДИ ВАШЕГО УДОВОЛЬСТВИЯ.
         </div>
       </div>

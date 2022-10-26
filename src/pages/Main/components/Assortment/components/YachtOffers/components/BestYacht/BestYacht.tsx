@@ -1,6 +1,6 @@
 import React from "react";
 
-import { YACHTS } from "@config/yachts";
+import { YACHTS } from "@config/db/yachts";
 import { Link } from "react-router-dom";
 
 import styles from "./styles.module.scss";

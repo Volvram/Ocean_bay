@@ -1,7 +1,7 @@
 import React from "react";
 
 import { CharacteristicsEnum } from "@config/characteristics";
-import { YachtsData } from "@config/yachts";
+import { YachtsData } from "@config/db/yachts";
 import cn from "classnames";
 
 import styles from "./styles.module.scss";

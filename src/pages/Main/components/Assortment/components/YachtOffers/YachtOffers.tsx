@@ -1,6 +1,6 @@
 import React from "react";
 
-import { YACHTS, YachtsData } from "@config/yachts";
+import { YACHTS, YachtsData } from "@config/db/yachts";
 
 import BestYacht from "./components/BestYacht/BestYacht";
 import YachtOffer from "./components/YachtOffer/YachtOffer";

@@ -1,6 +1,6 @@
 import React from "react";
 
-import { YachtsData } from "@config/yachts";
+import { YachtsData } from "@config/db/yachts";
 import cn from "classnames";
 import { Link } from "react-router-dom";
 
@@ -23,8 +23,12 @@ const YachtOffer: React.FC<YachtOfferProps> = ({ yacht }) => {
           <video
             className={styles.yachtOffer_video}
             src={yacht.video}
+            preload="auto"
             autoPlay
+            no-controls="true"
             loop
+            playsInline
+            muted
           />
         ) : (
           <>

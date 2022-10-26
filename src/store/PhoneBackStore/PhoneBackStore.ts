@@ -1,12 +1,13 @@
 import { ILocalStore } from "@utils/useLocalStore";
 import { makeObservable, observable, action, computed } from "mobx";
 
-type PrivateFields = "_name" | "_phone" | "_submitted";
+type PrivateFields = "_name" | "_phone" | "_submitted" | "_emptyFields";
 
 class PhoneBackStore implements ILocalStore {
   private _name: string | null = null;
   private _phone: string | null = null;
   private _submitted = false;
+  private _emptyFields = false;
 
   constructor() {
     makeObservable<PhoneBackStore, PrivateFields>(this, {
@@ -19,6 +20,9 @@ class PhoneBackStore implements ILocalStore {
       _submitted: observable,
       setSubmitted: action,
       submitted: computed,
+      _emptyFields: observable,
+      setEmptyFields: action,
+      emptyFields: computed,
     });
   }
 
@@ -44,6 +48,14 @@ class PhoneBackStore implements ILocalStore {
 
   get submitted() {
     return this._submitted;
+  }
+
+  setEmptyFields(empty: boolean) {
+    this._emptyFields = empty;
+  }
+
+  get emptyFields() {
+    return this._emptyFields;
   }
 
   destroy(): void {}

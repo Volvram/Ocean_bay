@@ -12,7 +12,9 @@ const Reservation: React.FC = () => {
       className={styles.reservationBackground}
       style={{ backgroundImage: `url(${reservationBackground})` }}
     >
-      <div className={styles.reservation_h}>СВОБОДА. ЭМОЦИИ. OCEAN BAY.</div>
+      <div className={`${styles.reservation_h} element-animation`}>
+        СВОБОДА. ЭМОЦИИ. OCEAN BAY.
+      </div>
       <Link to={{ pathname: "/", hash: "contacts" }}>
         <Button className={styles.reservation_button}>ЗАБРОНИРОВАТЬ</Button>
       </Link>

@@ -1,6 +1,6 @@
 import React from "react";
 
-import { YachtsData } from "@config/yachts";
+import { YachtsData } from "@config/db/yachts";
 import YachtPhotoStore from "@store/YachtPhotoStore/YachtPhotoStore";
 import { useLocalStore } from "@utils/useLocalStore";
 import { observer } from "mobx-react-lite";

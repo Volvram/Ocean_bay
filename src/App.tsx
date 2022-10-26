@@ -1,12 +1,19 @@
 import React from "react";
 
+import { smoothAppearance } from "@config/smoothAppearance";
 import Main from "@pages/Main/Main";
 import Yacht from "@pages/Yacht/Yacht";
-import { Routes, Route, Navigate } from "react-router-dom";
+import { Routes, Route, Navigate, useLocation } from "react-router-dom";
 
 import "./App.scss";
 
 const App: React.FC = () => {
+  const location = useLocation();
+
+  React.useEffect(() => {
+    smoothAppearance();
+  }, [location]);
+
   return (
     <div className="App">
       <Routes>
