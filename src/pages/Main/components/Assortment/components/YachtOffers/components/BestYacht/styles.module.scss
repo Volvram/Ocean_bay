@@ -17,6 +17,13 @@
 
         flex-grow: 1;
 
+        display: flex;
+        align-items: center;
+
+        &_video {
+            margin: 0 auto;
+        }
+
         &_img {
             width: 100%;
         }

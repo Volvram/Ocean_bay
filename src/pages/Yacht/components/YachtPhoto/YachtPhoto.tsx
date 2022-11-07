@@ -21,7 +21,7 @@ const YachtPhoto: React.FC<YachtsPhotoProps> = ({ yacht }) => {
     } else if (window.innerWidth > 840 && yachtPhotoStore.slides !== 2) {
       yachtPhotoStore.setSlides(2);
     }
-  }, []);
+  }, [yachtPhotoStore]);
 
   React.useEffect(() => {
     function slidesChange(this: HTMLElement, ev: Event) {
