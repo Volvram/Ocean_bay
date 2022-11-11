@@ -1,33 +1,46 @@
 @import "@styles/variables.scss";
 
 .contacts {
-    margin-top: 64px;
-    margin-bottom: 80px;
-    margin-left: $big-indent;
-    margin-right: $big-indent;
+    padding-top: 64px;
+    padding-left: $big-indent;
+    padding-right: $big-indent;
+
+    min-height: 580px;
+
+    background-repeat: no-repeat;
+    background-size: 100%;
 
     display:flex;
 
     &_h {
-        font-family: $cormorantSC;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        padding-left: 12px;
+
+        border-left: 1px solid $dark-blue-color;
+
+        color: #828282;
+
+        font-family: $comfortaa;
         font-style: normal;
         font-weight: 400;
-        font-size: 30px;
-        line-height: 139.9%;
+        font-size: 18px;
     }
 
-    &_hr {
-        margin-left: 0;
-        margin-right: auto;
+    &_reservation {
+        margin-top: 60px;
+        margin-bottom: 30px;
 
-        width: 182px;
+        max-width: 480px;
 
-        background-color: $dark-blue-color;
-        border: 1px solid $dark-blue-color;
+        font-family: $cormorantUnicase;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 44px;
     }
 
     &_text {
-        margin-right: 300px;
+        max-width: 600px;
 
         font-family: $cormorantSC;
         font-style: normal;
@@ -35,50 +48,65 @@
         font-size: 23px;
     }
 
-    &_admin {
+    &_phone {
+        margin-left: auto;
         margin-right: 92px;
 
         width: fit-content;
 
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        object-fit: contain;
 
-        &_avatar {
-            @include square(180px);
-        }
+        &_frame {
 
-        &_name {
-            color: $dark-brown-color;
+            width: fit-content;
 
-            white-space: nowrap;
+            background-repeat: no-repeat;
+            background-size: 100%;
+            object-fit: contain;
 
-            font-family: $cormorantSC;
-            font-style: normal;
-            font-weight: 500;
-            font-size: 26px;
-        }
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
 
-        &_title {
-            color: $light-grey-color;
-
-            font-family: $cormorantSC;
-            font-style: normal;
-            font-weight: 500;
-            font-size: 20px;
-        }
-
-        &_phone {
-            margin-top: 6px;
-
-            color: $dark-brown-color;
-
-            white-space: nowrap;
-
-            font-family: $cormorantSC;
-            font-style: normal;
-            font-weight: 400;
-            font-size: 26px;
+            &_avatar {
+                @include square(180px);
+            }
+    
+            &_name {
+                color: $dark-brown-color;
+    
+                white-space: nowrap;
+    
+                font-family: $cormorantSC;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 26px;
+            }
+    
+            &_title {
+                color: $light-grey-color;
+    
+                font-family: $cormorantSC;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 20px;
+            }
+    
+            &_phoneNumber {
+                margin-top: 6px;
+    
+                color: $dark-brown-color;
+    
+                white-space: nowrap;
+    
+                font-family: $cormorantSC;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 26px;
+            }
         }
     }
 }
@@ -116,13 +144,12 @@
 
 @media screen and (max-width: $tablet-album-width) {
     .contacts {
-        margin-top: 32px;
-        margin-bottom: 40px;
-        margin-left: $average-indent;
-        margin-right: $average-indent;
+        padding-top: 32px;
+        padding-left: $average-indent;
+        padding-right: $average-indent;
 
         &_h {
-            font-size: 26px
+            font-size: 16px
         }
 
         &_text {
@@ -155,13 +182,12 @@
 
 @media screen and (max-width: $phone-album-width) {
     .contacts {
-        margin-top: 16px;
-        margin-bottom: 20px;
-        margin-left: $small-indent;
-        margin-right: $small-indent;
+        padding-top: 16px;
+        padding-left: $small-indent;
+        padding-right: $small-indent;
 
         &_h {
-            font-size: 16px
+            font-size: 14px
         }
 
         &_hr {

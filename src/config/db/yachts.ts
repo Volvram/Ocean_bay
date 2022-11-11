@@ -4,7 +4,15 @@ import yacht_1_2 from "@assets/img/yacht_1_2.svg";
 import yacht_1_3 from "@assets/img/yacht_1_3.svg";
 import yacht_1_4 from "@assets/img/yacht_1_4.svg";
 import yacht_2 from "@assets/img/yacht_2.svg";
+import yacht_2_1 from "@assets/img/yacht_2_1.svg";
+import yacht_2_2 from "@assets/img/yacht_2_2.svg";
+import yacht_2_3 from "@assets/img/yacht_2_3.svg";
+import yacht_2_4 from "@assets/img/yacht_2_4.svg";
 import yacht_3 from "@assets/img/yacht_3.svg";
+import yacht_3_1 from "@assets/img/yacht_3_1.svg";
+import yacht_3_2 from "@assets/img/yacht_3_2.svg";
+import yacht_3_3 from "@assets/img/yacht_3_3.svg";
+import yacht_3_4 from "@assets/img/yacht_3_4.svg";
 import yacht_1_video from "@assets/video/yacht_1.mp4";
 import { ImageType } from "@store/SliderStore/SliderStore";
 
@@ -94,7 +102,7 @@ export const YACHTS: YachtsData[] = [
     best: false,
     characteristics: {
       constructionMaterial: "Алюминий | Алюминий",
-      grossTonage: "-",
+      grossTonage: "185 т",
       overallLength: "41.10 м",
       width: "8.10 м",
       draft: "2.26 м",
@@ -109,7 +117,19 @@ export const YACHTS: YachtsData[] = [
     video: yacht_1_video,
     additionalImages: [
       {
-        url: "",
+        url: yacht_2_1,
+        title: "",
+      },
+      {
+        url: yacht_2_2,
+        title: "",
+      },
+      {
+        url: yacht_2_3,
+        title: "",
+      },
+      {
+        url: yacht_2_4,
         title: "",
       },
     ],
@@ -140,7 +160,19 @@ export const YACHTS: YachtsData[] = [
     video: yacht_1_video,
     additionalImages: [
       {
-        url: "",
+        url: yacht_3_1,
+        title: "",
+      },
+      {
+        url: yacht_3_2,
+        title: "",
+      },
+      {
+        url: yacht_3_3,
+        title: "",
+      },
+      {
+        url: yacht_3_4,
         title: "",
       },
     ],
