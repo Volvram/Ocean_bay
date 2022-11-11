@@ -1,19 +1,109 @@
 @import "@styles/variables.scss";
 
 .aboutUs {
-    margin-bottom: 20px;
-    font-family: $cormorantUnicase;
+    padding-left: 12px;
 
+    border-left: 1px solid $dark-blue-color;
+
+    font-family: $cormorantUnicase;
     font-style: normal;
     font-weight: 500;
-    font-size: 26px;
+    font-size: 20px;
 }
+
+.container {
+
+    display: flex;
+    justify-content: space-between;
+
+    &_services {
+        margin-top: 67px;
+
+        &_h {
+            font-family: $cormorantSC;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 28px;
+        }
+    
+        &_service {
+            margin-bottom: 15%;
+
+            padding-left: 12px;
+
+            max-width: 600px;
+
+            border-left: 1px solid $light-blue-color;
+
+            font-family: $cormorantSC;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 20px;
+        }
+    }
+
+    &_images {
+        margin-top: 67px;
+        margin-left: 20%;
+
+        &_row {
+            display: flex;
+
+            &_img {
+                margin-top: 15px;
+                margin-bottom: 15px;
+                margin-left: 20px;
+                margin-right: 20px;
+
+                max-height: 150px;
+            }
+        }
+    }
+}
+
 
 @media screen and (max-width: $desktop-width) {
     .aboutUs {
         margin-bottom: 16px;
 
-        font-size: 20px;
+        font-size: 16px;
+    }
+    .container {
+
+        &_services {
+            margin-top: 30px;
+    
+            &_h {
+                font-size: 20px;
+            }
+        
+            &_service {
+
+                padding-left: 12px;
+    
+                max-width: 400px;
+
+                font-size: 16px;
+            }
+        }
+
+        &_images {
+            margin-top: 30px;
+            margin-left: 10%;
+    
+            &_row {
+                display: flex;
+    
+                &_img {
+                    margin-top: 15px;
+                    margin-bottom: 15px;
+                    margin-left: 20px;
+                    margin-right: 20px;
+    
+                    max-height: 135px;
+                }
+            }
+        }
     }
 }
 
@@ -21,7 +111,53 @@
     .aboutUs {
         margin-bottom: 12px;
 
-        font-size: 18px;
+        font-size: 16px;
+    }
+
+    .container {
+
+        &_services {
+            margin-top: 30px;
+    
+            &_h {
+                font-size: 18px;
+            }
+        
+            &_service {
+
+                padding-left: 12px;
+    
+                max-width: 300px;
+
+                font-size: 14px;
+            }
+        }
+
+        &_images {
+            margin-top: 30px;
+            margin-left: 5%;
+    
+            &_row {
+                display: flex;
+    
+                &_img {
+                    margin-top: 8px;
+                    margin-bottom: 8px;
+                    margin-left: 10px;
+                    margin-right: 10px;
+    
+                    max-height: 120px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $tablet-portrait-width) {
+    .container {
+        &_images {
+            display: none;
+        }
     }
 }
 
@@ -30,5 +166,22 @@
         margin-bottom: 8px;
 
         font-size: 14px;
+    }
+
+    .container {
+
+        &_services {
+            margin-top: 12px;
+            
+            &_h {
+                font-size: 16px;
+            }
+        
+            &_service {
+                margin-bottom: 10%;
+
+                font-size: 12px;
+            }
+        }
     }
 }

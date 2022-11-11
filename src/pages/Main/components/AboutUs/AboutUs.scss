@@ -2,21 +2,16 @@
 
 #aboutUs {
     margin-left: $big-indent;
-    margin-right: 30%;
 
     padding-top: 52px;
     padding-bottom: 52px;
     
 
     font-family: $cormorantSC;
-    font-size: 23px;
 }
 
 @media screen and (max-width: $desktop-width) {
     #aboutUs {
-        padding-top: 24px;
-        padding-bottom: 32px;
-
         font-size: 19px;
     }
 }
@@ -26,16 +21,14 @@
         padding-top: 12px;
         padding-bottom: 20px;
 
-        font-size: 12px;
     }
 }
 
 @media screen and (max-width: $phone-album-width) {
     #aboutUs {
         margin-left: $small-indent;
-        padding-top: 16px;
+        padding-top: 30px;
         padding-bottom: 16px;
         
-        font-size: 10px;
     }
 }
