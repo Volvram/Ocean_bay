@@ -23,7 +23,7 @@
             font-family: $cormorantSC;
             font-style: normal;
             font-weight: 500;
-            font-size: 28px;
+            font-size: 32px;
         }
     
         &_service {
@@ -31,7 +31,7 @@
 
             padding-left: 12px;
 
-            max-width: 600px;
+            max-width: 500px;
 
             border-left: 1px solid $light-blue-color;
 
@@ -44,7 +44,7 @@
 
     &_images {
         margin-top: 67px;
-        margin-left: 20%;
+        margin-left: 5%;
 
         &_row {
             display: flex;
@@ -55,7 +55,7 @@
                 margin-left: 20px;
                 margin-right: 20px;
 
-                max-height: 150px;
+                height: 160px;
             }
         }
     }
@@ -74,7 +74,7 @@
             margin-top: 30px;
     
             &_h {
-                font-size: 20px;
+                font-size: 28px;
             }
         
             &_service {
@@ -100,7 +100,7 @@
                     margin-left: 20px;
                     margin-right: 20px;
     
-                    max-height: 135px;
+                    max-height: 150px;
                 }
             }
         }
@@ -120,7 +120,7 @@
             margin-top: 30px;
     
             &_h {
-                font-size: 18px;
+                font-size: 20px;
             }
         
             &_service {
@@ -145,8 +145,6 @@
                     margin-bottom: 8px;
                     margin-left: 10px;
                     margin-right: 10px;
-    
-                    max-height: 120px;
                 }
             }
         }
