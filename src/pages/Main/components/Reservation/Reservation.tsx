@@ -1,6 +1,5 @@
 import React from "react";
 
-import reservationBackground from "@assets/img/reservationBackground.svg";
 import waves from "@assets/video/waves.mp4";
 import Button from "@components/Button";
 import { Link } from "react-router-dom";

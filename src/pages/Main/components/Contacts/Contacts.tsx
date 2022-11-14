@@ -1,9 +1,7 @@
 import React from "react";
 
 import admin from "@assets/img/admin.svg";
-import iphoneFrame from "@assets/img/iphoneFrame.svg";
 import mapBackground from "@assets/img/mapBackground.svg";
-import phoneWallpaper from "@assets/img/phoneWallpaper.svg";
 
 import styles from "./styles.module.scss";
 
