@@ -14,6 +14,10 @@
 
     flex-grow: 1;
 
+    transition: all 1s ease-out;
+
+    overflow: hidden;
+
     &_video {
         width: 100%;
 
@@ -51,6 +55,29 @@
             margin-left: 5px;
         }
     }
+}
+
+.yachtOffer:hover {
+    transform: translate(10px, 10px);
+}
+
+.yachtOffer::after {
+    position: absolute;
+    content: "ПОДРОБНЕЕ  >";
+
+    right: 7px;
+    bottom: 80px;
+    
+    color: $white-color;
+
+    z-index: 2;
+    transform: translateX(100%);
+
+    transition: all 1s;
+}
+
+.yachtOffer:hover::after {
+    transform: translateX(-30%);
 }
 
 @media screen and (max-width: $tablet-album-width) {

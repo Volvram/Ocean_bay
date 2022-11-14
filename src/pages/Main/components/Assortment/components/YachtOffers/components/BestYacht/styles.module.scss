@@ -3,6 +3,17 @@
 .bestYachtOffer{
     display: flex;
 
+    font-family: $comfortaa;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+
+    color: $white-color;
+
+    transition: all 1s ease-out;
+
+    overflow: hidden;
+
     &_offer {
         position: relative;
 
@@ -68,6 +79,29 @@
             }
         }
     }
+}
+
+.bestYachtOffer:hover {
+    transform: translate(10px, 10px);
+}
+
+.bestYachtOffer::after {
+    position: absolute;
+    content: "ПОДРОБНЕЕ  >";
+
+    right: 10px;
+    bottom: 80px;
+    
+    color: $white-color;
+
+    z-index: 2;
+    transform: translateX(100%);
+
+    transition: all 1s;
+}
+
+.bestYachtOffer:hover::after {
+    transform: translateX(-30%);
 }
 
 @media screen and (max-width: $tablet-album-width) {
