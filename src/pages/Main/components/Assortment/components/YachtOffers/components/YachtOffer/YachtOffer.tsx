@@ -19,39 +19,6 @@ const YachtOffer: React.FC<YachtOfferProps> = ({ yacht }) => {
         onMouseEnter={(e: React.MouseEvent) => setHover(true)}
         onMouseLeave={(e: React.MouseEvent) => setHover(false)}
       >
-        {/* {hover ? (
-          <video
-            className={styles.yachtOffer_video}
-            src={yacht.video}
-            preload="auto"
-            autoPlay
-            no-controls="true"
-            loop
-            playsInline
-            muted
-          />
-        ) : (
-          <>
-            <img
-              src={yacht.image}
-              className={styles.yachtOffer_img}
-              alt="yacht"
-            />
-            <div
-              className={cn(
-                styles.yachtOffer_price,
-                yacht.priceColor === "dark" && styles.yachtOffer_price__dark
-              )}
-            >
-              {yacht.price}
-            </div>
-            <div className={styles.yachtOffer_model}>{yacht.model}</div>
-            <div className={styles.yachtOffer_made}>
-              <div className={styles.yachtOffer_made_year}>{yacht.year}</div>
-              <div className={styles.yachtOffer_made_place}>{yacht.place}</div>
-            </div>
-          </>
-        )} */}
         <img src={yacht.image} className={styles.yachtOffer_img} alt="yacht" />
         <div
           className={cn(

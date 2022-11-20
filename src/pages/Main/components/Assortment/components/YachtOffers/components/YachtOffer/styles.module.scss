@@ -82,7 +82,21 @@
 
 @media screen and (max-width: $tablet-album-width) {
     .yachtOffer {
-            font-size: 12px;
+        font-size: 12px;
+
+        &_model {
+            left: 12px;
+            bottom: 50px;
+        }
+
+        &_made {
+            left: 12px;
+            bottom: 30px;
+        }
+    }
+
+    .yachtOffer::after {
+        bottom: 50px;
     }
 }
 
@@ -103,11 +117,47 @@
             bottom: 20px;
         }
     }
+
+    .yachtOffer::after {
+        bottom: 35px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .yachtOffer::after {
+        bottom: 60px;
+
+        font-size: 10px;
+    }
 }
 
 @media screen and (max-width: $phone-album-width) {
     .yachtOffer {
         flex-wrap: wrap;
-            font-size: 10px;
+        font-size: 12px;
+    
+        &_model {
+            left: 18px;
+            bottom: 45px;
+        }
+    
+        &_made {
+            left: 18px;
+            bottom: 25px;
+        }
+    }
+
+    .yachtOffer::after {
+        bottom: 45px;
+
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .yachtOffer::after {
+        bottom: 65px;
+
+        font-size: 12px;
     }
 }

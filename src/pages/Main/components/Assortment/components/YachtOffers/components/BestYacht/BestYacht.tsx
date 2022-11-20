@@ -23,43 +23,6 @@ const BestYacht: React.FC = () => {
             onMouseEnter={(e: React.MouseEvent) => setHover(true)}
             onMouseLeave={(e: React.MouseEvent) => setHover(false)}
           >
-            {/* {hover ? (
-              <video
-                className={styles.bestYachtOffer_offer_video}
-                src={bestYacht.video}
-                preload="auto"
-                autoPlay
-                no-controls="true"
-                loop
-                playsInline
-                muted
-              />
-            ) : (
-              <>
-                <img
-                  src={bestYacht.image}
-                  className={styles.bestYachtOffer_offer_img}
-                  alt="yacht"
-                />
-                <div className={styles.bestYachtOffer_offer_price}>
-                  {bestYacht.price}
-                </div>
-                <div className={styles.bestYachtOffer_offer_bestOffer}>
-                  Лучшее предложение
-                </div>
-                <div className={styles.bestYachtOffer_offer_model}>
-                  {bestYacht.model}
-                </div>
-                <div className={styles.bestYachtOffer_offer_made}>
-                  <div className={styles.bestYachtOffer_offer_made_year}>
-                    {bestYacht.year}
-                  </div>
-                  <div className={styles.bestYachtOffer_offer_made_place}>
-                    {bestYacht.place}
-                  </div>
-                </div>
-              </>
-            )} */}
             <img
               src={bestYacht.image}
               className={styles.bestYachtOffer_offer_img}

@@ -90,7 +90,7 @@
     content: "ПОДРОБНЕЕ  >";
 
     right: 10px;
-    bottom: 80px;
+    bottom: 75px;
     
     color: $white-color;
 
@@ -107,14 +107,39 @@
 @media screen and (max-width: $tablet-album-width) {
     .bestYachtOffer {
         &_offer {
-            font-size: 12px;
+
+            &_price {
+                top: 20px;
+                right: 15px;
+            }
+
+            &_bestOffer {
+                left: 12px;
+                bottom: 70px;
+            }
+
+            &_model {
+                left: 12px;
+                bottom: 45px;
+            }
+
+            &_made {
+                left: 12px;
+                bottom: 25px;
+            }
         }
+    }
+
+    .bestYachtOffer::after {
+        bottom: 45px;
     }
 }
 
 @media screen and (max-width: $tablet-portrait-width) {
     .bestYachtOffer {
         &_offer {
+
+            font-size: 12px;
 
             &_price {
                 top: 20px;
@@ -138,6 +163,16 @@
                 bottom: 20px;
             }
         }
+    }
+
+    .bestYachtOffer::after {
+        bottom: 35px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .bestYachtOffer::after {
+        font-size: 12px;
     }
 }
 
@@ -163,5 +198,38 @@
                 bottom: 15px;
             }
         }
+    }
+
+    .bestYachtOffer::after {
+        bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .bestYachtOffer {
+
+        &_offer {
+            &_bestOffer {
+                bottom: 45px;
+
+                font-size: 12px;
+            }
+
+            &_model {
+                left: 12px;
+                bottom: 25px;
+            }
+
+            &_made {
+                left: 12px;
+                bottom: 10px;
+            }
+        }
+    }
+
+    .bestYachtOffer::after {
+        bottom: 45px;
+
+        font-size: 8px;
     }
 }
