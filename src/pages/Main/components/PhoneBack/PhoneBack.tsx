@@ -3,10 +3,10 @@ import React from "react";
 import phoneBackBackground from "@assets/img/phoneBackBackground.svg";
 import Button from "@components/Button";
 import Input from "@components/Input";
-import { CLIENTS } from "@config/db/clients";
 import PhoneBackStore from "@store/PhoneBackStore/PhoneBackStore";
 import { useLocalStore } from "@utils/useLocalStore";
 import { observer } from "mobx-react-lite";
+import clients from "@config/db/clients.json";
 
 import styles from "./styles.module.scss";
 
@@ -32,9 +32,10 @@ const PhoneBack: React.FC = () => {
     } else {
       phoneBackStore.setEmptyFields(false);
       phoneBackStore.setSubmitted(true);
-      CLIENTS.push({
+
+      clients.push({
         name: phoneBackStore.name,
-        phone: phoneBackStore.phone,
+        phone: phoneBackStore.phone
       });
     }
   }, [phoneBackStore]);
