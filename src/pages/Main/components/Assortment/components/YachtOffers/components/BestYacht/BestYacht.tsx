@@ -6,8 +6,6 @@ import { Link } from "react-router-dom";
 import styles from "./styles.module.scss";
 
 const BestYacht: React.FC = () => {
-  const [hover, setHover] = React.useState(false);
-
   const bestYacht = YACHTS.find((yachts) => yachts.best);
 
   return (
@@ -18,21 +16,17 @@ const BestYacht: React.FC = () => {
           key={bestYacht.id}
           className={styles.bestYachtOffer}
         >
-          <div
-            className={styles.bestYachtOffer_offer}
-            onMouseEnter={(e: React.MouseEvent) => setHover(true)}
-            onMouseLeave={(e: React.MouseEvent) => setHover(false)}
-          >
-            <img
-              src={bestYacht.image}
-              className={styles.bestYachtOffer_offer_img}
-              alt="yacht"
-            />
+          <div className={styles.bestYachtOffer_offer}>
+            <div className={styles.bestYachtOffer_offer_frame}>
+              <img
+                src={bestYacht.image}
+                className={styles.bestYachtOffer_offer_img}
+                alt="yacht"
+              />
+            </div>
+
             <div className={styles.bestYachtOffer_offer_price}>
               {bestYacht.price}
-            </div>
-            <div className={styles.bestYachtOffer_offer_bestOffer}>
-              Лучшее предложение
             </div>
             <div className={styles.bestYachtOffer_offer_model}>
               {bestYacht.model}

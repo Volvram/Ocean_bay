@@ -11,28 +11,31 @@ type YachtOfferProps = {
 };
 
 const YachtOffer: React.FC<YachtOfferProps> = ({ yacht }) => {
-  const [hover, setHover] = React.useState(false);
-
   return (
-    <Link to={`/yacht/${yacht.id}`} className={styles.yachtOffer}>
-      <div
-        onMouseEnter={(e: React.MouseEvent) => setHover(true)}
-        onMouseLeave={(e: React.MouseEvent) => setHover(false)}
-      >
+    <Link
+      to={`/yacht/${yacht.id}`}
+      className={cn(
+        styles.yachtOffer,
+        yacht.id % 2 !== 0 && styles.yachtOffer_left,
+        yacht.id % 2 === 0 && styles.yachtOffer_right
+      )}
+    >
+      <div className={styles.yachtOffer_frame}>
         <img src={yacht.image} className={styles.yachtOffer_img} alt="yacht" />
-        <div
-          className={cn(
-            styles.yachtOffer_price,
-            yacht.priceColor === "dark" && styles.yachtOffer_price__dark
-          )}
-        >
-          {yacht.price}
-        </div>
-        <div className={styles.yachtOffer_model}>{yacht.model}</div>
-        <div className={styles.yachtOffer_made}>
-          <div className={styles.yachtOffer_made_year}>{yacht.year}</div>
-          <div className={styles.yachtOffer_made_place}>{yacht.place}</div>
-        </div>
+      </div>
+
+      <div
+        className={cn(
+          styles.yachtOffer_price,
+          yacht.priceColor === "dark" && styles.yachtOffer_price__dark
+        )}
+      >
+        {yacht.price}
+      </div>
+      <div className={styles.yachtOffer_model}>{yacht.model}</div>
+      <div className={styles.yachtOffer_made}>
+        <div className={styles.yachtOffer_made_year}>{yacht.year}</div>
+        <div className={styles.yachtOffer_made_place}>{yacht.place}</div>
       </div>
     </Link>
   );

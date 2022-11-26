@@ -8,13 +8,19 @@
         margin-top: 63px;
         margin-bottom: 30px;
 
-        color: $black-color;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        padding-left: 12px;
 
-        font-family: $cormorantSC;
+        border-left: 1px solid #1B4673;
+
+        color: #828282;
+
+        font-family: $comfortaa;
         font-style: normal;
-        font-weight: 500;
-        font-size: 30px;
-        line-height: 100%;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 16px;
     }
 }
 

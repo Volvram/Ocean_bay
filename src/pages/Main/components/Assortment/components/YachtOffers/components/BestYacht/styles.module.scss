@@ -10,7 +10,7 @@
 
     color: $white-color;
 
-    transition: all 1s ease-out;
+    // transition: all 1s ease-out;
 
     overflow: hidden;
 
@@ -35,30 +35,30 @@
             margin: 0 auto;
         }
 
+        &_frame {
+            width: 100%;
+    
+            overflow: hidden;
+        }
+
         &_img {
             width: 100%;
+
+            -webkit-transition: all 1.5s ease; /* Safari and Chrome */
+            -moz-transition: all 1.5s ease; /* Firefox */
+            -ms-transition: all 1.5s ease; /* IE 9 */
+            -o-transition: all 1.5s ease; /* Opera */
+            transition: all 1.5s ease;
         }
 
         &_price {
             position: absolute;
-            top: 30px;
+            top: 40px;
             right: 40px;
     
             &__dark {
                 color: $dark-brown-color;
             }
-        }
-
-        &_bestOffer {
-            padding-bottom: 5px;
-
-            position: absolute;
-            left: 24px;
-            bottom: 105px;
-
-            font-size: 24px;
-
-            border-bottom:  1px solid $white-color;
         }
 
         &_model {
@@ -81,27 +81,47 @@
     }
 }
 
-.bestYachtOffer:hover {
-    transform: translate(10px, 10px);
+.bestYachtOffer {
+    &_offer {
+        &_img:hover {
+            transform: scale(1.05);
+        }
+    }
 }
 
-.bestYachtOffer::after {
-    position: absolute;
-    content: "ПОДРОБНЕЕ  >";
+// .bestYachtOffer:hover {
+//     transform: translate(10px, 10px);
+// }
 
-    right: 10px;
-    bottom: 75px;
-    
-    color: $white-color;
+.bestYachtOffer {
+    &_offer::after {
+        position: absolute;
+        content: "ПОДРОБНЕЕ  >";
 
-    z-index: 2;
-    transform: translateX(100%);
+        right: 50px;
+        bottom: 75px;
+        
+        color: $white-color;
 
-    transition: all 1s;
+        z-index: 5;
+        // transform: translateX(100%);
+
+        transition: all 1s;
+    }
 }
 
-.bestYachtOffer:hover::after {
-    transform: translateX(-30%);
+// .bestYachtOffer:hover::after {
+//     transform: translateX(-30%);
+// }
+
+@media screen and (max-width: $tablet-album-width) {
+    .bestYachtOffer {
+        &_offer {
+            &_price {
+                top: 30px;
+            }
+        }
+    }
 }
 
 @media screen and (max-width: $tablet-album-width) {
@@ -130,8 +150,10 @@
         }
     }
 
-    .bestYachtOffer::after {
-        bottom: 45px;
+    .bestYachtOffer {
+        &_offer::after {
+            bottom: 45px;
+        }
     }
 }
 
@@ -146,13 +168,6 @@
                 right: 15px;
             }
 
-            &_bestOffer {
-                left: 12px;
-                bottom: 60px;
-    
-                font-size: 18px;
-            }
-
             &_model {
                 left: 12px;
                 bottom: 35px;
@@ -165,8 +180,10 @@
         }
     }
 
-    .bestYachtOffer::after {
-        bottom: 35px;
+    .bestYachtOffer {
+        &_offer::after {
+            bottom: 35px;
+        }
     }
 }
 
@@ -182,12 +199,6 @@
         &_offer {
             font-size: 10px;
 
-            &_bestOffer {
-                bottom: 50px;
-
-                font-size: 14px;
-            }
-
             &_model {
                 left: 12px;
                 bottom: 30px;
@@ -200,8 +211,10 @@
         }
     }
 
-    .bestYachtOffer::after {
-        bottom: 30px;
+    .bestYachtOffer {
+        &_offer::after {
+            bottom: 30px;
+        }
     }
 }
 
@@ -209,11 +222,6 @@
     .bestYachtOffer {
 
         &_offer {
-            &_bestOffer {
-                bottom: 45px;
-
-                font-size: 12px;
-            }
 
             &_model {
                 left: 12px;
@@ -227,9 +235,11 @@
         }
     }
 
-    .bestYachtOffer::after {
-        bottom: 45px;
+    .bestYachtOffer {
+        &_offer::after {
+            bottom: 45px;
 
-        font-size: 8px;
+            font-size: 8px;
+        }
     }
 }

@@ -1,11 +1,16 @@
 @import "@styles/variables.scss";
 
 .yachtOffers {
+    margin-bottom: 45px;
+
     display: flex;
+    justify-content: space-between;
 }
 
 @media screen and (max-width: $phone-album-width) {
     .yachtOffers {
+        margin-bottom: 0;
+
         flex-wrap: wrap;
     }
 }

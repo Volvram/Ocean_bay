@@ -3,7 +3,8 @@
 .yachtOffer {
     position: relative;
 
-    height: fit-content;
+    width: 100%;
+    height: min-content;
 
     font-family: $comfortaa;
     font-style: normal;
@@ -12,20 +13,43 @@
 
     color: $white-color;
 
+    overflow: hidden;
+
     flex-grow: 1;
 
-    transition: all 1s ease-out;
+    // transition: all 1s ease-out;
+    &_left {
+        margin-right: 10px;
+    }
 
-    overflow: hidden;
+    &_right {
+        margin-left: 10px;
+    }
 
     &_video {
         width: 100%;
-
+        
         object-fit:fill;
+    }
+
+    &_frame {
+        width: 100%;
+        height: fit-content;
+
+        overflow: hidden;
     }
 
     &_img {
         width: 100%;
+        height: 100%;
+
+        // pointer-events: none;
+
+        -webkit-transition: all 1.5s ease; /* Safari and Chrome */
+        -moz-transition: all 1.5s ease; /* Firefox */
+        -ms-transition: all 1.5s ease; /* IE 9 */
+        -o-transition: all 1.5s ease; /* Opera */
+        transition: all 1.5s ease;
     }
 
     &_price {
@@ -57,28 +81,35 @@
     }
 }
 
-.yachtOffer:hover {
-    transform: translate(10px, 10px);
+.yachtOffer {
+    
+    &_img:hover {
+        transform: scale(1.05);
+    }
 }
+
+// .yachtOffer:hover {
+//     transform: translate(10px, 10px);
+// }
 
 .yachtOffer::after {
     position: absolute;
     content: "ПОДРОБНЕЕ  >";
 
-    right: 7px;
+    right: 27px;
     bottom: 80px;
     
     color: $white-color;
 
-    z-index: 2;
-    transform: translateX(100%);
+    z-index: 5;
+    // transform: translateX(100%);
 
     transition: all 1s;
 }
 
-.yachtOffer:hover::after {
-    transform: translateX(-30%);
-}
+// .yachtOffer:hover::after {
+//     transform: translateX(-30%);
+// }
 
 @media screen and (max-width: $tablet-album-width) {
     .yachtOffer {
@@ -136,6 +167,14 @@
         flex-wrap: wrap;
         font-size: 12px;
     
+        &_left {
+            margin: 0;
+        }
+
+        &_right {
+            margin: 0;
+        }
+
         &_model {
             left: 18px;
             bottom: 45px;
