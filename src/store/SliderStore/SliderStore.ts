@@ -1,12 +1,8 @@
+import { ImageType } from "@config/db/yachts";
 import { ILocalStore } from "@utils/useLocalStore";
 import { makeObservable, observable, action, computed } from "mobx";
 
 type PrivateFields = "_items" | "_slide" | "_touchPosition";
-
-export type ImageType = {
-  url: string;
-  title: string;
-};
 
 class SliderStore implements ILocalStore {
   private _items: ImageType[] = [];

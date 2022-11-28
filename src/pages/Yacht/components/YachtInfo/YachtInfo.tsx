@@ -27,7 +27,7 @@ const YachtInfo: React.FC<YachtInfoProps> = ({ yacht }) => {
             </div>
           </div>
           <div className={styles.yachtInfo_character}>
-            <div className={styles.yachtInfo_character_h}>Характеристики</div>
+            <div className={styles.yachtInfo_character_h}>ХАРАКТЕРИСТИКИ</div>
             {Object.entries(CharacteristicsEnum).map((char) => {
               return (
                 <div

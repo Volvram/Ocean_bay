@@ -40,10 +40,19 @@
         &_h {
             margin-bottom: 32px;
 
-            font-family: $montserrat;
+            padding-top: 12px;
+            padding-bottom: 12px;
+            padding-left: 12px;
+
+            border-left: 1px solid #1B4673;
+
+            color: #828282;
+
+            font-family: $comfortaa;
             font-style: normal;
-            font-weight: 500;
-            font-size: 19px;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 16px;
         }
 
         &_element{
@@ -76,6 +85,21 @@
 @media screen and (max-width: $desktop-width) {
     .yachtInfo {
         margin-top: 200px;
+    }
+}
+
+@media screen and (max-width: $tablet-album-width) {
+    .yachtInfo {
+        &_character{
+            margin-top: 60px;
+            
+            &_h {
+                padding-top: 9px;
+                padding-bottom: 9px;
+
+                font-size: 16px;
+            }
+        }
     }
 }
 
@@ -134,7 +158,10 @@
             &_h {
                 margin-bottom: 16px;
 
-                font-size: 16px;
+                padding-top: 6px;
+                padding-bottom: 6px;
+
+                font-size: 12px;
             }
     
             &_element{

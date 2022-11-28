@@ -3,6 +3,10 @@ import yacht_1_1 from "@assets/img/yacht_1_1.svg";
 import yacht_1_2 from "@assets/img/yacht_1_2.svg";
 import yacht_1_3 from "@assets/img/yacht_1_3.svg";
 import yacht_1_4 from "@assets/img/yacht_1_4.svg";
+import yacht_1_bigImage_1 from "@assets/img/yacht_1_bigImage_1.svg";
+import yacht_1_bigImage_2 from "@assets/img/yacht_1_bigImage_2.svg";
+import yacht_1_smallImage_1 from "@assets/img/yacht_1_smallImage_1.svg";
+import yacht_1_smallImage_2 from "@assets/img/yacht_1_smallImage_2.svg";
 import yacht_2 from "@assets/img/yacht_2.svg";
 import yacht_2_1 from "@assets/img/yacht_2_1.svg";
 import yacht_2_2 from "@assets/img/yacht_2_2.svg";
@@ -14,7 +18,6 @@ import yacht_3_2 from "@assets/img/yacht_3_2.svg";
 import yacht_3_3 from "@assets/img/yacht_3_3.svg";
 import yacht_3_4 from "@assets/img/yacht_3_4.svg";
 import yacht_1_video from "@assets/video/yacht_1.mp4";
-import { ImageType } from "@store/SliderStore/SliderStore";
 
 export type YachtCharacteristics = {
   constructionMaterial: string;
@@ -31,6 +34,11 @@ export type YachtCharacteristics = {
   concept: string;
 };
 
+export type ImageType = {
+  url: string;
+  title: string;
+};
+
 export type YachtsData = {
   id: number;
   image: string;
@@ -43,6 +51,8 @@ export type YachtsData = {
   characteristics: YachtCharacteristics;
   video: string;
   additionalImages: ImageType[];
+  bigImages: string[];
+  smallImages: ImageType[];
 };
 
 export const YACHTS: YachtsData[] = [
@@ -62,7 +72,7 @@ export const YACHTS: YachtsData[] = [
       width: "12.10 м",
       draft: "3.30 м",
       maxSpeed: "16.00 узл",
-      powerReserve: "5000.00 м",
+      powerReserve: "5000.00 мм",
       displacement: "1500.00 т",
       beds: "16 + 25",
       cabins: "8 + 14",
@@ -88,6 +98,20 @@ export const YACHTS: YachtsData[] = [
       {
         url: yacht_1_4,
         title: "",
+      },
+    ],
+
+    bigImages: [yacht_1_bigImage_1, yacht_1_bigImage_2],
+    smallImages: [
+      {
+        url: yacht_1_smallImage_1,
+        title:
+          "нижний уровень пляжного клуба с открывающейся на уровне воды боковой террасой. При этом тендеры и обширный набор водной техники хранятся в носовом гараже, чтобы отдать пространство в корме только для отдыха и развлечений. Верхняя палуба и сандек планируются в соответствии с желаниями будущего владельца. ",
+      },
+      {
+        url: yacht_1_smallImage_2,
+        title:
+          "50-метровая модель BNow  с “бесшовным” соединением внутренних помещений и открытых палуб. Доступ к пляжному клубу сделан непосредственно с главной палубы, где в корме располагается открытая зона с панорамным обзором и инфинити-бассейном. Далее — основной салон, столовая и камбуз, а в носовой части — мастер-апартаменты с каютой, двумя ванными комнатами, офисом и откидным балконом. На нижней палубе — 4 каюты гостей, помещения экипажа и нижний уровень пляжного клуба с открывающейся на уровне воды боковой террасой. При этом тендеры и обширный набор водной техники хранятся в носовом гараже, чтобы отдать пространство в корме только для отдыха и развлечений. Верхняя палуба и сандек планируются в соответствии с желаниями будущего владельца. ",
       },
     ],
   },
@@ -133,6 +157,17 @@ export const YACHTS: YachtsData[] = [
         title: "",
       },
     ],
+    bigImages: ["", ""],
+    smallImages: [
+      {
+        url: "",
+        title: "",
+      },
+      {
+        url: "",
+        title: "",
+      },
+    ],
   },
   {
     id: 3,
@@ -173,6 +208,18 @@ export const YACHTS: YachtsData[] = [
       },
       {
         url: yacht_3_4,
+        title: "",
+      },
+    ],
+
+    bigImages: ["", ""],
+    smallImages: [
+      {
+        url: "",
+        title: "",
+      },
+      {
+        url: "",
         title: "",
       },
     ],
