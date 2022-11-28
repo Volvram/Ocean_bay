@@ -1,5 +1,6 @@
 import React from "react";
 
+import arrow from "@assets/img/arrow.svg";
 import { YACHTS } from "@config/db/yachts";
 import { Link } from "react-router-dom";
 
@@ -38,6 +39,17 @@ const BestYacht: React.FC = () => {
               <div className={styles.bestYachtOffer_offer_made_place}>
                 {bestYacht.place}
               </div>
+            </div>
+
+            <div className={styles.bestYachtOffer_offer_more}>
+              <div className={styles.bestYachtOffer_offer_more_text}>
+                ПОДРОБНЕЕ
+              </div>
+              <img
+                src={arrow}
+                className={styles.bestYachtOffer_offer_more_arrow}
+                alt=">"
+              />
             </div>
           </div>
         </Link>

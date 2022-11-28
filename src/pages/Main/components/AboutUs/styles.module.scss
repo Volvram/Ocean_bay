@@ -1,14 +1,19 @@
 @import "@styles/variables.scss";
 
 .aboutUs {
+    padding-top: 12px;
+    padding-bottom: 12px;
     padding-left: 12px;
 
     border-left: 1px solid $dark-blue-color;
 
-    font-family: $cormorantUnicase;
+    color: #828282;
+
+    font-family: $comfortaa;
     font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 16px;
 }
 
 .container {
@@ -20,6 +25,7 @@
         margin-top: 67px;
 
         &_h {
+
             font-family: $cormorantSC;
             font-style: normal;
             font-weight: 500;
@@ -65,8 +71,6 @@
 @media screen and (max-width: $desktop-width) {
     .aboutUs {
         margin-bottom: 16px;
-
-        font-size: 16px;
     }
     .container {
 
@@ -111,13 +115,16 @@
     .aboutUs {
         margin-bottom: 12px;
 
+        padding-top: 9px;
+        padding-bottom: 9px;
+
         font-size: 16px;
     }
 
     .container {
 
         &_services {
-            margin-top: 30px;
+            margin-top: 15px;
     
             &_h {
                 font-size: 20px;
@@ -134,7 +141,7 @@
         }
 
         &_images {
-            margin-top: 30px;
+            margin-top: 15px;
             margin-left: 5%;
     
             &_row {
@@ -163,13 +170,16 @@
     .aboutUs {
         margin-bottom: 8px;
 
-        font-size: 14px;
+        padding-top: 6px;
+        padding-bottom: 6px;
+
+        font-size: 12px;
     }
 
     .container {
 
         &_services {
-            margin-top: 12px;
+            margin-top: 0px;
             
             &_h {
                 font-size: 16px;

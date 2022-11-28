@@ -17,19 +17,12 @@
 
     flex-grow: 1;
 
-    // transition: all 1s ease-out;
     &_left {
         margin-right: 10px;
     }
 
     &_right {
         margin-left: 10px;
-    }
-
-    &_video {
-        width: 100%;
-        
-        object-fit:fill;
     }
 
     &_frame {
@@ -42,8 +35,6 @@
     &_img {
         width: 100%;
         height: 100%;
-
-        // pointer-events: none;
 
         -webkit-transition: all 1.5s ease; /* Safari and Chrome */
         -moz-transition: all 1.5s ease; /* Firefox */
@@ -79,6 +70,33 @@
             margin-left: 5px;
         }
     }
+
+    &_more {
+        position: absolute;
+
+        right: 27px;
+        bottom: 80px;
+
+        color: $white-color;
+
+        font-size: 13px;
+
+        display: flex;
+        align-items: center;
+
+        &_text {
+            height: fit-content;
+
+            display: flex;
+            align-items: flex-end;
+        }
+
+        &_arrow {
+            margin-left: 10px;
+
+            height: fit-content;
+        }
+    }
 }
 
 .yachtOffer {
@@ -88,46 +106,27 @@
     }
 }
 
-// .yachtOffer:hover {
-//     transform: translate(10px, 10px);
-// }
-
-.yachtOffer::after {
-    position: absolute;
-    content: "ПОДРОБНЕЕ  >";
-
-    right: 27px;
-    bottom: 80px;
-    
-    color: $white-color;
-
-    z-index: 5;
-    // transform: translateX(100%);
-
-    transition: all 1s;
-}
-
-// .yachtOffer:hover::after {
-//     transform: translateX(-30%);
-// }
-
-@media screen and (max-width: $tablet-album-width) {
+@media screen and (max-width: $desktop-width) {
     .yachtOffer {
-        font-size: 12px;
-
         &_model {
             left: 12px;
-            bottom: 50px;
+            bottom: 60px;
         }
 
         &_made {
             left: 12px;
             bottom: 30px;
         }
-    }
 
-    .yachtOffer::after {
-        bottom: 50px;
+        &_more {
+            bottom: 60px;
+        }
+    }
+}
+
+@media screen and (max-width: $tablet-album-width) {
+    .yachtOffer {
+        font-size: 12px;
     }
 }
 
@@ -147,18 +146,20 @@
             left: 12px;
             bottom: 20px;
         }
-    }
 
-    .yachtOffer::after {
-        bottom: 35px;
+        &_more {
+            bottom: 35px;
+
+            font-size: 10px;
+        }
     }
 }
 
 @media screen and (max-width: 700px) {
-    .yachtOffer::after {
-        bottom: 60px;
-
-        font-size: 10px;
+    .yachtOffer {
+        &_more {
+            display: none;
+        }
     }
 }
 
@@ -184,19 +185,21 @@
             left: 18px;
             bottom: 25px;
         }
-    }
 
-    .yachtOffer::after {
-        bottom: 45px;
+        &_more {
+            display: flex;
 
-        font-size: 12px;
+            bottom: 45px;
+
+            font-size: 12px;
+        }
     }
 }
 
 @media screen and (max-width: 380px) {
-    .yachtOffer::after {
-        bottom: 65px;
-
-        font-size: 12px;
+    .yachtOffer {
+        &_more {
+            display: none;
+        }
     }
 }

@@ -142,10 +142,14 @@
     }
 }
 
-@media screen and (max-width: $desktop-width) {
+@media screen and (max-width: 1400px) {
     .contacts {
         padding-right: 0px;
+    }
+}
 
+@media screen and (max-width: $desktop-width) {
+    .contacts {
         &_text{
             margin-right: 211px;
             font-size: 19px;
@@ -195,9 +199,11 @@
     .contacts {
         padding-top: 32px;
         padding-left: $average-indent;
-        padding-right: $average-indent;
 
         &_h {
+            padding-top: 9px;
+            padding-bottom: 9px;
+
             font-size: 16px
         }
 
@@ -328,6 +334,9 @@
         flex-direction: column;
 
         &_h {
+            padding-top: 6px;
+            padding-bottom: 6px;
+
             font-size: 12px;
         }
 
