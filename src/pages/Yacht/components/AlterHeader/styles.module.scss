@@ -2,7 +2,7 @@
 
 .background {
     width: 100%;
-    height: 300px;
+    height: 550px;
 
     background-color: $dark-blue-color;
 }
@@ -58,10 +58,21 @@
         }
     }
 }
+@media screen and (max-width: $desktop-width) {
+    .background {
+        height: 480px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .background {
+        height: 410px;
+    }
+}
 
 @media screen and (max-width: $tablet-album-width) {
-    .background{
-        height: 250px;
+    .background {
+        height: 370px;
     }
     .alterHeader {
         margin-left: 35px;
@@ -86,8 +97,9 @@
 }
 @media screen and (max-width: $tablet-portrait-width) {
     .background{
-        height: 200px;
+        height: 370px;
     }
+
     .alterHeader {
         margin-left: $small-indent;
         margin-right: 20px;
@@ -114,9 +126,6 @@
 }
 
 @media screen and (max-width: $phone-album-width) {
-    .background{
-        height: 150px;
-    }
     .alterHeader {
         margin-left: 8px;
         margin-right: $small-indent;

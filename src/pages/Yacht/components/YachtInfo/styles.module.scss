@@ -1,41 +1,11 @@
 @import "@styles/variables.scss";
 
 .yachtInfo {
-    margin-top: 300px;
     margin-left: $big-indent;
     margin-right: $big-indent;
 
-    &_main {
-
-        &_model {
-            margin-bottom: 6px;
-
-            color: $black-color;
-
-            font-family: $montserrat;
-            font-style: normal;
-            font-weight: 500;
-            font-size: 25px;
-        }
-
-        &_made {
-            color: $dark-grey-color;
-
-            display: flex;
-
-            font-family: $montserrat;
-            font-style: normal;
-            font-weight: 400;
-            font-size: 20px;
-
-            &_place {
-                margin-left: 30px;
-            }
-        }
-    }
-
     &_character{
-        margin-top: 80px;
+        margin-top: 50px;
         
         &_h {
             margin-bottom: 32px;
@@ -82,12 +52,6 @@
     }
 }
 
-@media screen and (max-width: $desktop-width) {
-    .yachtInfo {
-        margin-top: 200px;
-    }
-}
-
 @media screen and (max-width: $tablet-album-width) {
     .yachtInfo {
         &_character{
@@ -105,7 +69,6 @@
 
 @media screen and (max-width: $tablet-portrait-width) {
     .yachtInfo {
-        margin-top: 220px;
         margin-left: $average-indent;
         margin-right: $average-indent;
 
@@ -137,7 +100,6 @@
 
 @media screen and (max-width: $phone-album-width) {
     .yachtInfo {
-        margin-top: 140px;
         margin-left: $small-indent;
         margin-right: $small-indent;
 

@@ -1,5 +1,6 @@
 import React from "react";
 
+import { ImageType } from "@config/db/yachts";
 import SliderStore from "@store/SliderStore/SliderStore";
 import { useLocalStore } from "@utils/useLocalStore";
 import { observer } from "mobx-react-lite";
@@ -8,7 +9,6 @@ import Arrows from "./components/Arrows";
 import Dots from "./components/Dots/Dots";
 import SlidesList from "./components/SlidesList/SlidesList";
 import styles from "./styles.module.scss";
-import { ImageType } from "@config/db/yachts";
 
 export const SliderContext = React.createContext({
   goToSlide: (number: number) => {},

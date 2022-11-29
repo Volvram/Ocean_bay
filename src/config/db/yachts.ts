@@ -1,23 +1,13 @@
 import yacht_1 from "@assets/img/yacht_1.svg";
-import yacht_1_1 from "@assets/img/yacht_1_1.svg";
-import yacht_1_2 from "@assets/img/yacht_1_2.svg";
-import yacht_1_3 from "@assets/img/yacht_1_3.svg";
-import yacht_1_4 from "@assets/img/yacht_1_4.svg";
 import yacht_1_bigImage_1 from "@assets/img/yacht_1_bigImage_1.svg";
 import yacht_1_bigImage_2 from "@assets/img/yacht_1_bigImage_2.svg";
 import yacht_1_smallImage_1 from "@assets/img/yacht_1_smallImage_1.svg";
 import yacht_1_smallImage_2 from "@assets/img/yacht_1_smallImage_2.svg";
 import yacht_2 from "@assets/img/yacht_2.svg";
-import yacht_2_1 from "@assets/img/yacht_2_1.svg";
-import yacht_2_2 from "@assets/img/yacht_2_2.svg";
-import yacht_2_3 from "@assets/img/yacht_2_3.svg";
-import yacht_2_4 from "@assets/img/yacht_2_4.svg";
 import yacht_3 from "@assets/img/yacht_3.svg";
-import yacht_3_1 from "@assets/img/yacht_3_1.svg";
-import yacht_3_2 from "@assets/img/yacht_3_2.svg";
-import yacht_3_3 from "@assets/img/yacht_3_3.svg";
-import yacht_3_4 from "@assets/img/yacht_3_4.svg";
-import yacht_1_video from "@assets/video/yacht_1.mp4";
+import yacht_1_video from "@assets/video/yacht_1_video.mp4";
+import yacht_2_video from "@assets/video/yacht_2_video.mp4";
+import yacht_3_video from "@assets/video/yacht_3_video.mp4";
 
 export type YachtCharacteristics = {
   constructionMaterial: string;
@@ -50,7 +40,8 @@ export type YachtsData = {
   best: boolean;
   characteristics: YachtCharacteristics;
   video: string;
-  additionalImages: ImageType[];
+  series: string;
+  description: string;
   bigImages: string[];
   smallImages: ImageType[];
 };
@@ -80,26 +71,10 @@ export const YACHTS: YachtsData[] = [
       concept: "RWD",
     },
 
+    series: "Серия BNow (Benetti Now)",
+    description:
+      "Новое семейство яхт длиной от 50 до 68 м, разработанное Benetti в сотрудничестве с британской дизайн студией Redman Whiteley Dixon. Его особенность — достаточно сжатые сроки строительства по сравнению с принятыми на рынке стандартами, что стало возможным благодаря разработанным Benetti новым технологиям постройки.",
     video: yacht_1_video,
-
-    additionalImages: [
-      {
-        url: yacht_1_1,
-        title: "",
-      },
-      {
-        url: yacht_1_2,
-        title: "",
-      },
-      {
-        url: yacht_1_3,
-        title: "",
-      },
-      {
-        url: yacht_1_4,
-        title: "",
-      },
-    ],
 
     bigImages: [yacht_1_bigImage_1, yacht_1_bigImage_2],
     smallImages: [
@@ -138,25 +113,11 @@ export const YACHTS: YachtsData[] = [
       interiorDesign: "LUCA DINI Design & Architecture",
       concept: "Mondomarine | Cor. D. Rover Design",
     },
-    video: yacht_1_video,
-    additionalImages: [
-      {
-        url: yacht_2_1,
-        title: "",
-      },
-      {
-        url: yacht_2_2,
-        title: "",
-      },
-      {
-        url: yacht_2_3,
-        title: "",
-      },
-      {
-        url: yacht_2_4,
-        title: "",
-      },
-    ],
+
+    series: "",
+    description: "",
+    video: yacht_2_video,
+
     bigImages: ["", ""],
     smallImages: [
       {
@@ -192,25 +153,10 @@ export const YACHTS: YachtsData[] = [
       interiorDesign: "Benetti Yachts",
       concept: "Benetti Yachts",
     },
-    video: yacht_1_video,
-    additionalImages: [
-      {
-        url: yacht_3_1,
-        title: "",
-      },
-      {
-        url: yacht_3_2,
-        title: "",
-      },
-      {
-        url: yacht_3_3,
-        title: "",
-      },
-      {
-        url: yacht_3_4,
-        title: "",
-      },
-    ],
+
+    series: "",
+    description: "",
+    video: yacht_3_video,
 
     bigImages: ["", ""],
     smallImages: [

@@ -1,0 +1,266 @@
+@import "@styles/variables.scss";
+
+.yachtVideo {
+    margin-top: -370px;
+
+    width: 100%;
+    height: 500px;
+    max-height: 500px;
+
+    display: flex;
+
+    &_container {
+        position: relative;
+
+        &_videoBackground {
+            width: 100%;
+            height: 100%;
+
+            background: #000000;
+        }
+
+        &_video {
+            opacity: 0.65;
+
+            object-fit: cover;
+
+            width: 100%;
+            height: 100%;
+        }
+
+        &_main {
+            position: absolute;
+
+            color: $white-color;
+
+            top: 25px;
+            left: 25px;
+
+            &_model {
+                margin-bottom: 6px;
+    
+                font-family: $montserrat;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 25px;
+            }
+    
+            &_made {
+                display: flex;
+    
+                font-family: $montserrat;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 20px;
+    
+                &_place {
+                    margin-left: 30px;
+                }
+            }
+        }
+    }
+
+    &_description {
+        margin-top: 30px;
+        margin-left: auto;
+        margin-right: auto;
+
+        max-width: 600px;
+
+        color: $white-color;
+
+        font-family: $montserrat;
+        font-style: normal;
+        
+        line-height: 139.9%;
+
+        &_h {
+            margin-bottom: 25px;
+
+            font-weight: 500;
+            font-size: 30px;
+        }
+
+        &_text {
+            font-weight: 100;
+            line-height: 139.9%;
+            font-size: 22px;
+        }
+    }
+}
+
+@media screen and (max-width: 1540px) {
+    .yachtVideo {
+        &_description {
+            margin-left: 60px;
+            margin-right: 60px;
+
+            max-width: 400px;
+
+            &_h {
+                font-size: 25px;
+            }
+    
+            &_text {
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $desktop-width) {
+    .yachtVideo {
+        margin-top: -330px;
+
+        height: auto;
+
+        &_container {
+            &_videoBackground {
+                width: fit-content;
+                height: fit-content;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .yachtVideo {
+        margin-top: -260px;
+
+        &_description {
+            margin-top: 25px;
+            margin-left: $average-indent;
+            margin-right: $average-indent;
+
+            &_h {
+                font-size: 20px;
+            }
+    
+            &_text {
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $tablet-album-width) {
+    .yachtVideo {
+        margin-top: -220px;
+
+        &_container {
+            &_main {
+                top: 15px;
+                left: 15px;
+    
+                &_model {
+                    font-size: 18px;
+                }
+        
+                &_made {
+                    font-size: 14px;
+        
+                    &_place {
+                        margin-left: 20px;
+                    }
+                }
+            }
+        }
+        
+        &_description {
+            margin-top: 15px;
+            margin-left: $small-indent;
+            margin-right: $small-indent;
+
+            &_h {
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $tablet-portrait-width) {
+    .yachtVideo {
+        margin-top: -270px;
+
+        max-height: 670px;
+
+        flex-direction: column-reverse;
+        align-items: center;
+
+        &_container {
+            width: 100%;
+            height: fit-content;
+
+            &_videoBackground {
+                width: 100%;
+            }
+
+            &_main {
+                top: 15px;
+                left: 15px;
+    
+                &_model {
+                    font-size: 18px;
+                }
+        
+                &_made {
+                    font-size: 14px;
+                }
+            }
+        }
+        
+
+        &_description {
+            margin-top: 0px;
+            margin-bottom: 20px;
+
+            max-width: 480px;
+
+            &_h {
+                font-size: 18px;
+            }
+    
+            &_text {
+                text-align: justify;
+
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $phone-album-width) {
+    .yachtVideo {
+        margin-top: -290px;
+
+        &_container {
+
+            &_main {
+                top: 15px;
+                left: 15px;
+    
+                &_model {
+                    font-size: 16px;
+                }
+        
+                &_made {
+                    font-size: 12px;
+                }
+            }
+        }
+
+        &_description {
+            margin-bottom: 20px;
+
+            &_h {
+                margin-bottom: 8px;
+
+                font-size: 14px;
+            }
+    
+            &_text {
+                font-size: 11px;
+            }
+        }
+    }
+}
