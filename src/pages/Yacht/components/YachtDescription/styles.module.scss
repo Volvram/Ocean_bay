@@ -1,31 +1,173 @@
 @import "@styles/variables.scss";
 
 .yachtDescription {
+    margin-top: 70px;
+    margin-bottom: 10px;
     margin-left: auto;
     margin-right: auto;
 
-    width: fit-content;
+    &_imageBlock {
+        margin-bottom: 40px;
 
-    &_bigImage {
-        margin-top: 70px;
+        position: relative;
+
+        &_bigImage {
+            width: 100%;
+    
+            &_description {
+                
+                max-width: 500px;
+    
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 15px;
+                line-height: 139.9%;
+    
+                &_upperLeft {
+                    position: absolute;
+                    top: 25px;
+                    bottom: unset;
+                    left: 100px;
+                    right: unset;
+                }
+    
+                &_upperRight {
+                    position: absolute;
+                    top: 25px;
+                    bottom: unset;
+                    left: unset;
+                    right: 100px;
+    
+                    text-align: right;              
+                }
+
+                &_lowerLeft {
+                    position: absolute;
+                    top: unset;
+                    bottom: 25px;
+                    left: 100px;
+                    right: unset;
+                }
+
+                &_lowerRight {
+                    position: absolute;
+                    top: unset;
+                    bottom: 25px;
+                    left: unset;
+                    right: 100px;
+    
+                    max-width: 400px;
+
+                    text-align: right; 
+                }
+    
+                &_light {
+                    color: $white-color;
+                }
+    
+                &_dark {
+                    color: $black-color;
+                }
+            }
+        }
     }
 
-    &_description {
-        margin-top: 40px;
+    &_aboutYacht {
+        margin-top: 60px;
+        margin-bottom: 90px;
+        margin-left: auto;
+        margin-right: auto;
 
-        display: flex;
-        justify-content: space-between;
+        width: 100%;
+        max-width: fit-content;
+
+        &_h {
+            margin-bottom: 60px;
+            margin-left: 35%;
+
+            padding-bottom: 12px;
+
+            width: 100%;
+            max-width: fit-content;
+
+            border-bottom: 1px solid #828282;
+
+            color: #828282;
+
+            font-family: $comfortaa;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 30px;
+            line-height: 33px;
+        }
 
         &_text {
-            margin-top: 20px;
+            width: 100%;
+            max-width: 550px;
 
-            max-width: 500px;
+            white-space: pre;
 
             font-family: $montserrat;
             font-style: normal;
             font-weight: 400;
             font-size: 15px;
             line-height: 139.9%;
+        }
+    }
+
+    &_imagine {
+        margin-bottom: 40px;
+        margin-left: auto;
+        margin-right: auto;
+
+        max-width: 1100px;
+
+        color: #B9B9B9;
+
+        font-family: $montserrat;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 25px;
+        line-height: 139.9%;
+
+        text-align: center;
+    }
+
+    &_smallImages {
+        margin-bottom: 50px;
+
+        display: flex;
+        justify-content: center;
+
+        &_smallImage {
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+    }
+}
+
+@media screen and (max-width: $tablet-portrait-width) {
+    .yachtDescription {
+        margin-top: 35px;
+        &_imageBlock {
+            margin-bottom: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: $phone-album-width) {
+    .yachtDescription {
+    
+        &_aboutYacht {
+    
+            &_h {
+
+            }
+    
+            &_text {
+                white-space: unset;
+            }
         }
     }
 }

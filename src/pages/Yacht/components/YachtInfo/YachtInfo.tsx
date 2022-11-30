@@ -16,7 +16,9 @@ const YachtInfo: React.FC<YachtInfoProps> = ({ yacht }) => {
       {yacht && (
         <div className={styles.yachtInfo}>
           <div className={styles.yachtInfo_character}>
-            <div className={styles.yachtInfo_character_h}>ХАРАКТЕРИСТИКИ</div>
+            <div className={styles.yachtInfo_character_h}>
+              ОСНОВНЫЕ ТЕХНИЧЕСКИЕ ХАРАКТЕРИСТИКИ
+            </div>
             {Object.entries(CharacteristicsEnum).map((char) => {
               return (
                 <div
@@ -40,6 +42,13 @@ const YachtInfo: React.FC<YachtInfoProps> = ({ yacht }) => {
                 </div>
               );
             })}
+          </div>
+          <div className={styles.yachtInfo_schema}>
+            <img
+              src={yacht.schema}
+              className={styles.yachtInfo_schema_img}
+              alt={`${yacht.model} schema`}
+            />
           </div>
         </div>
       )}
