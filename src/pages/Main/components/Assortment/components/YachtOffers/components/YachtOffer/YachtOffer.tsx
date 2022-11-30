@@ -33,7 +33,7 @@ const YachtOffer: React.FC<YachtOfferProps> = ({ yacht }) => {
       >
         {yacht.price}
       </div>
-      <div className={styles.yachtOffer_model}>{yacht.model}</div>
+      <div className={styles.yachtOffer_model}>Яхта {yacht.model}</div>
       <div className={styles.yachtOffer_made}>
         <div className={styles.yachtOffer_made_year}>{yacht.year}</div>
         <div className={styles.yachtOffer_made_place}>{yacht.place}</div>

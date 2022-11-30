@@ -19,7 +19,18 @@ body {
 }
 
 .element-show {
-  opacity: 1;
   transition: all 2s;
+  opacity: 1;
   transform: translateY(0%);
+}
+
+.blur-animation{
+  opacity: 0;
+  filter: blur(5px);
+}
+
+.blur-show{
+  transition: all 1.5s;
+  opacity: 1;
+  filter: blur(0px);
 }

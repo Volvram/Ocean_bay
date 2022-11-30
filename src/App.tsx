@@ -1,5 +1,6 @@
 import React from "react";
 
+import { blurAppearance } from "@config/blurAppearance";
 import { smoothAppearance } from "@config/smoothAppearance";
 import Main from "@pages/Main/Main";
 import Yacht from "@pages/Yacht/Yacht";
@@ -12,6 +13,7 @@ const App: React.FC = () => {
 
   React.useEffect(() => {
     smoothAppearance();
+    blurAppearance();
   }, [location]);
 
   return (

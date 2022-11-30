@@ -27,9 +27,10 @@
 
     &_frame {
         width: 100%;
-        height: fit-content;
 
         overflow: hidden;
+
+        display:flex;
     }
 
     &_img {

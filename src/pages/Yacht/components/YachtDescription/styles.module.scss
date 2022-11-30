@@ -21,10 +21,12 @@
                 font-family: 'Montserrat';
                 font-style: normal;
                 font-weight: 400;
-                font-size: 15px;
+                font-size: 17px;
                 line-height: 139.9%;
     
                 &_upperLeft {
+                    max-width: 380px;
+
                     position: absolute;
                     top: 25px;
                     bottom: unset;
@@ -33,6 +35,8 @@
                 }
     
                 &_upperRight {
+                    max-width: 550px;
+
                     position: absolute;
                     top: 25px;
                     bottom: unset;
@@ -111,7 +115,7 @@
             font-family: $montserrat;
             font-style: normal;
             font-weight: 400;
-            font-size: 15px;
+            font-size: 17px;
             line-height: 139.9%;
         }
     }
@@ -140,9 +144,60 @@
         display: flex;
         justify-content: center;
 
-        &_smallImage {
+        &_frame {
             margin-left: 10px;
             margin-right: 10px;
+
+            overflow: hidden;
+
+            display:flex;
+        }
+
+        &_smallImage {
+
+            -webkit-transition: all 1.5s ease; /* Safari and Chrome */
+            -moz-transition: all 1.5s ease; /* Firefox */
+            -ms-transition: all 1.5s ease; /* IE 9 */
+            -o-transition: all 1.5s ease; /* Opera */
+            transition: all 1.5s ease;
+        }
+    }
+}
+
+.yachtDescription {
+    &_smallImages {
+        &_smallImage:hover {
+            transform: scale(1.05);
+        }
+    }
+}
+
+@media screen and (max-width: $desktop-width) {
+    .yachtDescription {
+        &_imageBlock {
+            &_bigImage {
+                &_description {
+                    font-size: 15px;
+                }
+            }
+        }
+
+        &_aboutYacht {
+            &_text {
+                font-size: 15px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $tablet-album-width) {
+    .yachtDescription {
+        &_imageBlock {
+            &_bigImage {
+                &_description {
+                    font-size: 12px;
+                }
+            }
         }
     }
 }

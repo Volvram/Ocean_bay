@@ -36,11 +36,10 @@ const YachtDescription: React.FC<YachtDescriptionProps> = ({ yacht }) => {
               className={cn(
                 styles.yachtDescription_imageBlock_bigImage_description,
                 styles.yachtDescription_imageBlock_bigImage_description_upperLeft,
-                styles.yachtDescription_imageBlock_bigImage_description_light,
+                styles.yachtDescription_imageBlock_bigImage_description_dark,
                 yacht.id === 3 &&
                   styles.yachtDescription_imageBlock_bigImage_description_upperRight,
-                (yacht.id === 1 || yacht.id === 3) &&
-                  styles.yachtDescription_imageBlock_bigImage_description_dark
+                "blur-animation"
               )}
             >
               {yacht.bigImages[1]?.title}
@@ -57,7 +56,10 @@ const YachtDescription: React.FC<YachtDescriptionProps> = ({ yacht }) => {
               className={cn(
                 styles.yachtDescription_imageBlock_bigImage_description,
                 styles.yachtDescription_imageBlock_bigImage_description_upperLeft,
-                styles.yachtDescription_imageBlock_bigImage_description_light
+                styles.yachtDescription_imageBlock_bigImage_description_light,
+                yacht.id === 2 &&
+                  styles.yachtDescription_imageBlock_bigImage_description_lowerLeft,
+                "blur-animation"
               )}
             >
               {yacht.bigImages[2]?.title}
@@ -67,7 +69,8 @@ const YachtDescription: React.FC<YachtDescriptionProps> = ({ yacht }) => {
                 className={cn(
                   styles.yachtDescription_imageBlock_bigImage_description,
                   styles.yachtDescription_imageBlock_bigImage_description_lowerRight,
-                  styles.yachtDescription_imageBlock_bigImage_description_light
+                  styles.yachtDescription_imageBlock_bigImage_description_light,
+                  "blur-animation"
                 )}
               >
                 {yacht.bigImages[2]?.text}
@@ -78,16 +81,20 @@ const YachtDescription: React.FC<YachtDescriptionProps> = ({ yacht }) => {
           <div className={styles.yachtDescription_imagine}>{yacht.imagine}</div>
 
           <div className={styles.yachtDescription_smallImages}>
-            <img
-              src={yacht.smallImages[0]?.url}
-              className={styles.yachtDescription_smallImages_smallImage}
-              alt={yacht.model}
-            />
-            <img
-              src={yacht.smallImages[1]?.url}
-              className={styles.yachtDescription_smallImages_smallImage}
-              alt={yacht.model}
-            />
+            <div className={styles.yachtDescription_smallImages_frame}>
+              <img
+                src={yacht.smallImages[0]?.url}
+                className={styles.yachtDescription_smallImages_smallImage}
+                alt={yacht.model}
+              />
+            </div>
+            <div className={styles.yachtDescription_smallImages_frame}>
+              <img
+                src={yacht.smallImages[1]?.url}
+                className={styles.yachtDescription_smallImages_smallImage}
+                alt={yacht.model}
+              />
+            </div>
           </div>
 
           <img

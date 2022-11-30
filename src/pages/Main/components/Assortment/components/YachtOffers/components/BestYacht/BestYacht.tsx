@@ -30,7 +30,7 @@ const BestYacht: React.FC = () => {
               {bestYacht.price}
             </div>
             <div className={styles.bestYachtOffer_offer_model}>
-              {bestYacht.model}
+              Яхта {bestYacht.model}
             </div>
             <div className={styles.bestYachtOffer_offer_made}>
               <div className={styles.bestYachtOffer_offer_made_year}>
