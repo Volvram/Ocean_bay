@@ -7,10 +7,16 @@
     justify-content: space-between;
 }
 
+@media screen and (max-width: $tablet-album-width) {
+    .yachtOffers {
+        margin-bottom: 20px;
+    }
+}
+
 @media screen and (max-width: $phone-album-width) {
     .yachtOffers {
-        margin-bottom: 0;
+        margin-bottom: 10px;
 
-        flex-wrap: wrap;
+        flex-direction: column;
     }
 }

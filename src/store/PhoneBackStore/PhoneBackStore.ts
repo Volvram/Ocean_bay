@@ -58,6 +58,44 @@ class PhoneBackStore implements ILocalStore {
     return this._emptyFields;
   }
 
+  handleNameInput = (value: string) => {
+    localStorage.setItem("name", value);
+  }
+
+  handlePhoneInput = (value: string) => {
+    localStorage.setItem("phone", value);
+  }
+
+  handleSubmit = () => {
+    this.setName(localStorage.getItem("name"));
+    this.setPhone(localStorage.getItem("phone"));
+
+    localStorage.setItem("name", "");
+    localStorage.setItem("phone", "");
+
+    if (!this.name || !this.phone) {
+      this.setEmptyFields(true);
+    } else {
+      this.setEmptyFields(false);
+      this.setSubmitted(true);
+
+      this.sendForm({
+        name: String(this._name),
+        phone: String(this._phone)
+      })
+    }
+  }
+
+  async sendForm(data: {name: string, phone: string}) {
+      await fetch("https://oceanbay-34965-default-rtdb.europe-west1.firebasedatabase.app/clients.json", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json;charset=utf8"
+        },
+        body: JSON.stringify(data)
+      })
+  }
+
   destroy(): void {}
 }
 

@@ -166,15 +166,17 @@
 
 @media screen and (max-width: $phone-album-width) {
     .yachtOffer {
+        margin-bottom: 10px;
+
         flex-wrap: wrap;
         font-size: 12px;
     
         &_left {
-            margin: 0;
+            margin-right: 0;
         }
 
         &_right {
-            margin: 0;
+            margin-left: 0;
         }
 
         &_model {

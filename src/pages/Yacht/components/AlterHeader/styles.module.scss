@@ -2,7 +2,7 @@
 
 .background {
     width: 100%;
-    height: 550px;
+    height: 610px;
 
     background-color: $dark-blue-color;
 }
@@ -60,13 +60,13 @@
 }
 @media screen and (max-width: $desktop-width) {
     .background {
-        height: 480px;
+        height: 510px;
     }
 }
 
 @media screen and (max-width: 1200px) {
     .background {
-        height: 410px;
+        height: 440px;
     }
 }
 

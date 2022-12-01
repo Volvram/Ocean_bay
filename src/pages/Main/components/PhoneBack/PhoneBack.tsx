@@ -13,33 +13,6 @@ import styles from "./styles.module.scss";
 const PhoneBack: React.FC = () => {
   const phoneBackStore = useLocalStore(() => new PhoneBackStore());
 
-  const handleNameInput = React.useCallback((value: string) => {
-    localStorage.setItem("name", value);
-  }, []);
-
-  const handlePhoneInput = React.useCallback((value: string) => {
-    localStorage.setItem("phone", value);
-  }, []);
-
-  const handleSubmit = React.useCallback(() => {
-    phoneBackStore.setName(localStorage.getItem("name"));
-    phoneBackStore.setPhone(localStorage.getItem("phone"));
-    localStorage.setItem("name", "");
-    localStorage.setItem("phone", "");
-
-    if (!phoneBackStore.name || !phoneBackStore.phone) {
-      phoneBackStore.setEmptyFields(true);
-    } else {
-      phoneBackStore.setEmptyFields(false);
-      phoneBackStore.setSubmitted(true);
-
-      clients.push({
-        name: phoneBackStore.name,
-        phone: phoneBackStore.phone,
-      });
-    }
-  }, [phoneBackStore]);
-
   return (
     <div
       className={styles.phoneBack}
@@ -54,18 +27,18 @@ const PhoneBack: React.FC = () => {
           <div className={styles.phoneBack_form}>
             <Input
               className={styles.phoneBack_form_input}
-              onChange={handleNameInput}
+              onChange={phoneBackStore.handleNameInput}
               placeholder="Имя"
             />
             <Input
               className={styles.phoneBack_form_input}
-              onChange={handlePhoneInput}
+              onChange={phoneBackStore.handlePhoneInput}
               type="tel"
               placeholder="Телефон"
             />
             <Button
               className={styles.phoneBack_form_submit}
-              onClick={handleSubmit}
+              onClick={phoneBackStore.handleSubmit}
             >
               ОТПРАВИТЬ
             </Button>

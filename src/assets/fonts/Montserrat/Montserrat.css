@@ -3,3 +3,9 @@
     src: local("Montserrat"),
     url("./Montserrat-Medium.ttf") format("truetype");
 }
+
+@font-face {
+    font-family: "MontserratLight";
+    src: local("MontserratLight"),
+    url("./Montserrat-Light.ttf") format("truetype");
+}

@@ -25,23 +25,23 @@
                 line-height: 139.9%;
     
                 &_upperLeft {
-                    max-width: 380px;
-
                     position: absolute;
                     top: 25px;
                     bottom: unset;
                     left: 100px;
                     right: unset;
+
+                    max-width: 380px;
                 }
     
                 &_upperRight {
-                    max-width: 550px;
-
                     position: absolute;
                     top: 25px;
                     bottom: unset;
                     left: unset;
                     right: 100px;
+
+                    max-width: 550px;
     
                     text-align: right;              
                 }
@@ -154,6 +154,7 @@
         }
 
         &_smallImage {
+            width: 100%;
 
             -webkit-transition: all 1.5s ease; /* Safari and Chrome */
             -moz-transition: all 1.5s ease; /* Firefox */
@@ -192,12 +193,67 @@
 
 @media screen and (max-width: $tablet-album-width) {
     .yachtDescription {
+        margin-top: 35px;
         &_imageBlock {
+            margin-bottom: 20px;
             &_bigImage {
                 &_description {
                     font-size: 12px;
+
+                    &_upperLeft {
+                        max-width: 340px;
+
+                        top: 15px;
+                        bottom: unset;
+                        left: 25px;
+                        right: unset;
+                    }
+
+                    &_upperRight {
+                        max-width: 450px;
+
+                        top: 15px;
+                        bottom: unset;
+                        left: unset;
+                        right: 25px;
+                    }
+
+                    &_lowerLeft {
+                        top: unset;
+                        bottom: 15px;
+                        left: 25px;
+                        right: unset;
+                    }
+
+                    &_lowerRight {
+                        top: unset;
+                        bottom: 15px;
+                        left: unset;
+                        right: 25px;
+
+                        max-width: 300px;
+                    }
                 }
             }
+        }
+
+        &_aboutYacht {
+            margin-top: 30px;
+            margin-bottom: 40px;
+
+            &_h {
+                margin-bottom: 30px;
+            }
+        }
+
+        &_imagine {
+            margin-bottom: 20px;
+
+            font-size: 18px;
+        }
+
+        &_smallImages {
+            margin-bottom: 25px;
         }
     }
 }
@@ -207,6 +263,71 @@
         margin-top: 35px;
         &_imageBlock {
             margin-bottom: 20px;
+            &_bigImage {
+                &_description {
+                    font-size: 10px;
+
+                    &_upperLeft {
+                        top: 5px;
+                        bottom: unset;
+                        left: 15px;
+                        right: unset;
+                    }
+
+                    &_upperRight {
+                        top: 5px;
+                        bottom: unset;
+                        left: unset;
+                        right: 15px;
+                    }
+
+                    &_lowerLeft {
+                        top: unset;
+                        bottom: 5px;
+                        left: 15px;
+                        right: unset;
+                    }
+
+                    &_lowerRight {
+                        top: unset;
+                        bottom: 5px;
+                        left: unset;
+                        right: 15px;
+                    }
+                }
+            }
+        }
+
+        &_aboutYacht {
+            margin-top: 30px;
+            margin-bottom: 40px;
+
+            &_h {
+                margin-bottom: 20px;
+
+                font-size: 25px;
+            }
+
+            &_text {
+                font-size: 13px;
+            }
+        }
+
+        &_imagine {
+            font-size: 16px;
+        }
+    }
+}
+
+@media screen and (max-width: 740px) {
+    .yachtDescription {
+        &_imageBlock {
+            margin-bottom: 20px;
+            &_bigImage {
+                &_description {
+                    display: none;
+                }
+            }
         }
     }
 }
@@ -217,12 +338,26 @@
         &_aboutYacht {
     
             &_h {
+                margin-bottom: 10px;
+                margin-left: 30%;
 
+                padding-bottom: 6px;
+
+                font-size: 22px;
             }
     
             &_text {
+
+                max-width: 290px;
+
                 white-space: unset;
+
+                text-align: justify;
             }
+        }
+
+        &_imagine {
+            font-size: 14px;
         }
     }
 }
