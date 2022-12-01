@@ -16,14 +16,16 @@ const YachtVideo: React.FC<YachtVideoProps> = ({ yacht }) => {
           <div className={styles.yachtVideo_container}>
             <div className={styles.yachtVideo_container_videoBackground}>
               <video
-                src={yacht.video}
                 className={styles.yachtVideo_container_video}
-                preload="true"
+                preload="auto"
                 autoPlay
-                loop
                 no-controls="true"
+                loop
+                playsInline
                 muted
-              />
+              >
+                <source src={yacht.video} type="video/mp4" />
+              </video>
             </div>
             <div className={styles.yachtVideo_container_main}>
               <div className={styles.yachtVideo_container_main_model}>

@@ -11,14 +11,16 @@ const Reservation: React.FC = () => {
     <div className={styles.reservation}>
       <video
         className={styles.reservation_video}
-        src={waves}
         preload="auto"
         autoPlay
         no-controls="true"
         loop
         playsInline
         muted
-      />
+      >
+        <source src={waves} type="video/mp4" />
+      </video>
+
       <div className={`${styles.reservation_h} element-animation`}>
         СВОБОДА. ЭМОЦИИ. OCEAN BAY.
       </div>
