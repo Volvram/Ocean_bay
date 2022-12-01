@@ -60,11 +60,11 @@ class PhoneBackStore implements ILocalStore {
 
   handleNameInput = (value: string) => {
     localStorage.setItem("name", value);
-  }
+  };
 
   handlePhoneInput = (value: string) => {
     localStorage.setItem("phone", value);
-  }
+  };
 
   handleSubmit = () => {
     this.setName(localStorage.getItem("name"));
@@ -81,19 +81,22 @@ class PhoneBackStore implements ILocalStore {
 
       this.sendForm({
         name: String(this._name),
-        phone: String(this._phone)
-      })
+        phone: String(this._phone),
+      });
     }
-  }
+  };
 
-  async sendForm(data: {name: string, phone: string}) {
-      await fetch("https://oceanbay-34965-default-rtdb.europe-west1.firebasedatabase.app/clients.json", {
+  async sendForm(data: { name: string; phone: string }) {
+    await fetch(
+      "https://oceanbay-34965-default-rtdb.europe-west1.firebasedatabase.app/clients.json",
+      {
         method: "POST",
         headers: {
-          "Content-Type": "application/json;charset=utf8"
+          "Content-Type": "application/json;charset=utf8",
         },
-        body: JSON.stringify(data)
-      })
+        body: JSON.stringify(data),
+      }
+    );
   }
 
   destroy(): void {}
