@@ -30,7 +30,7 @@ const YachtInfo: React.FC<YachtInfoProps> = ({ yacht }) => {
                   )}
                 >
                   <div className={styles.yachtInfo_character_element_title}>
-                    {char[1]}
+                    {char[1]}&nbsp;&nbsp;
                   </div>
                   <div className={styles.yachtInfo_character_element_value}>
                     {

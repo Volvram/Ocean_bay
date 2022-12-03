@@ -3,8 +3,8 @@
 .phoneBack {
     position: relative;
 
-    padding-top: 160px;
-    padding-bottom: 200px;
+    padding-top: 100px;
+    padding-bottom: 150px;
 
     padding-left: $big-indent;
     padding-right: $big-indent;
@@ -81,6 +81,12 @@
 
             border: 1px solid #636363;
             border-radius: 4px;
+
+            font-family: $comfortaa;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 139.9%;
         }
 
         &_submit {
@@ -96,14 +102,20 @@
 
             border: 1px solid #636363;
             border-radius: 4px;
+
+            font-family: $comfortaa;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 139.9%;
         }
     }
 }
 
 @media screen and (max-width: $desktop-width) {
     .phoneBack {
-        padding-top: 100px;
-        padding-bottom: 140px;
+        padding-top: 50px;
+        padding-bottom: 100px;
     }
 }
 
@@ -153,12 +165,16 @@
                 padding: 12px 18px;
 
                 width: 300px;
+
+                font-size: 14px;
             }
 
             &_submit {
                 padding: 12px 18px;
 
                 width: 300px;
+
+                font-size: 14px;
             }
         }
     }
@@ -210,12 +226,16 @@
                 padding: 6px 9px;
 
                 width: 200px;
+
+                font-size: 12px;
             }
 
             &_submit {
                 padding: 6px 9px;
 
                 width: 200px;
+
+                font-size: 12px;
             }
         }
     }

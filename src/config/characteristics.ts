@@ -9,6 +9,6 @@ export enum CharacteristicsEnum {
   displacement = "Видоизмещение",
   beds = "Кол-во спальных мест",
   cabins = "Кол-во кают",
-  interiorDesign = "Дизайн интерьера",
+  interiorDesign = "Дизайн интерьера  ",
   concept = "Внешний дизайн и концепция",
 }

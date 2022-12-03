@@ -18,7 +18,7 @@
                 
                 max-width: 500px;
     
-                font-family: 'Montserrat';
+                font-family: $montserrat;
                 font-style: normal;
                 font-weight: 400;
                 font-size: 17px;
@@ -139,6 +139,8 @@
     }
 
     &_smallImages {
+        margin-left: $big-indent;
+        margin-right: $big-indent;
         margin-bottom: 50px;
 
         display: flex;
@@ -147,6 +149,8 @@
         &_frame {
             margin-left: 10px;
             margin-right: 10px;
+
+            width: 100%;
 
             overflow: hidden;
 
@@ -186,6 +190,15 @@
         &_aboutYacht {
             &_text {
                 font-size: 15px;
+            }
+        }
+
+        &_smallImages {
+            margin-left: 0px;
+            margin-right: 0px;
+
+            &_frame {
+                width: auto;
             }
         }
     }

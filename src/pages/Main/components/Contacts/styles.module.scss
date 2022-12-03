@@ -150,6 +150,10 @@
 
 @media screen and (max-width: $desktop-width) {
     .contacts {
+        &_h {
+            font-size: 14px;
+        }
+
         &_text{
             margin-right: 211px;
             font-size: 19px;

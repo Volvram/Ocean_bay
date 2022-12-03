@@ -3,7 +3,7 @@
 .footer {
   margin-top: 80px;
 
-  padding: 25px $big-indent;
+  padding: 30px $big-indent;
 
   background: linear-gradient(
       180deg,
@@ -21,7 +21,7 @@
     font-family: $comfortaa;
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 13px;
 
     display: flex;
     justify-content: space-between;
@@ -41,24 +41,25 @@
         
         color: $white-color;
 
-        margin-top: 10px;
-        margin-bottom: 10px;
+        margin-top: 5px;
+        margin-bottom: 5px;
       }
     }
 
     &_info {
-
       display: flex;
       flex-direction: column;
       justify-content: space-between;
       
       &_element {
+        margin-top: 5px;
+        margin-bottom: 5px;
+
         list-style: none;
 
         color: $white-color;
 
-        margin-top: 5px;
-        margin-bottom: 5px;
+        text-align: right;
       }
     }
 }

@@ -57,10 +57,22 @@
     }
 
     &_schema {
+        margin-top: 15px;
+
         width: fit-content;
 
         &_img {
             width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: $desktop-width) {
+    .yachtInfo {
+        &_character{
+            &_h {
+                font-size: 14px;
+            }
         }
     }
 }
@@ -78,8 +90,6 @@
             &_h {
                 padding-top: 9px;
                 padding-bottom: 9px;
-
-                font-size: 16px;
             }
         }
     }

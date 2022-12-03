@@ -20,7 +20,7 @@
         }
 
         &_video {
-            opacity: 0.65;
+            opacity: 0.9;
 
             object-fit: cover;
 
@@ -61,7 +61,7 @@
     }
 
     &_description {
-        margin-top: 30px;
+        margin-top: 50px;
         margin-left: auto;
         margin-right: auto;
 
@@ -118,6 +118,9 @@
             &_videoBackground {
                 width: fit-content;
                 height: fit-content;
+
+                display:flex;
+                flex-direction: column;
             }
         }
     }

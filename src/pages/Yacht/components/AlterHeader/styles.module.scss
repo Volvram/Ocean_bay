@@ -41,9 +41,13 @@
             color: $white-color;
 
             &_link {
-                color: $white-color;
+                color: rgb(255, 255, 255, 0.95);
 
                 text-decoration: none;
+            }
+
+            &_link:hover {
+                color: $white-color;
             }
         }
     }
@@ -52,9 +56,13 @@
         margin-left: auto;
 
         &_a {
-            color: $white-color;
+            color: rgb(255, 255, 255,0.95);
 
             text-decoration: none;
+        }
+
+        &_a:hover {
+            color: $white-color;
         }
     }
 }

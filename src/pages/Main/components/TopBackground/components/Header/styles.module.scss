@@ -43,9 +43,13 @@
         margin-left: auto;
 
         &_a {
-            color: $white-color;
+            color: rgb(255, 255, 255, 0.95);
 
             text-decoration: none;
+        }
+
+        &_a:hover {
+            color: $white-color;
         }
     }
 }
@@ -121,6 +125,10 @@
                 margin-right: 3px;
 
                 &_link {
+                    color: rgb(255, 255, 255, 0.95);
+                }
+
+                &_link:hover {
                     color: $white-color;
                 }
             }
