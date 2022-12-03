@@ -3,11 +3,10 @@
 .yachtInfo {
     margin-top: 50px;
     margin-left: $big-indent;
-    margin-right: 50px;
 
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    
 
     &_character{
         width: fit-content;
@@ -58,6 +57,8 @@
 
     &_schema {
         margin-top: 15px;
+        margin-left: auto;
+        margin-right: auto;
 
         width: fit-content;
 
@@ -69,10 +70,19 @@
 
 @media screen and (max-width: $desktop-width) {
     .yachtInfo {
+        margin-right: 50px;
+        
+        justify-content: space-between;
+        
         &_character{
             &_h {
                 font-size: 14px;
             }
+        }
+
+        &_schema {
+            margin-left: 0px;
+            margin-right: 0px;
         }
     }
 }

@@ -34,6 +34,7 @@ const PhoneBack: React.FC = () => {
               onChange={phoneBackStore.handlePhoneInput}
               type="tel"
               placeholder="Телефон"
+              phone
             />
             <Button
               className={styles.phoneBack_form_submit}
