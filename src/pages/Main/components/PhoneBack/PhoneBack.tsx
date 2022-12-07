@@ -1,6 +1,6 @@
 import React from "react";
 
-import phoneBackBackground from "@assets/img/phoneBackBackground.svg";
+import phoneBackBackground from "@assets/img/phoneBackBackground.png";
 import Button from "@components/Button";
 import Input from "@components/Input";
 import PhoneBackStore from "@store/PhoneBackStore/PhoneBackStore";

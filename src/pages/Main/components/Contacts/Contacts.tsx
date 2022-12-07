@@ -2,7 +2,7 @@ import React from "react";
 
 import admin from "@assets/img/admin.svg";
 import phone from "@assets/img/iphone.svg";
-import mapBackground from "@assets/img/mapBackground.svg";
+import mapBackground from "@assets/img/mapBackground.png";
 
 import styles from "./styles.module.scss";
 

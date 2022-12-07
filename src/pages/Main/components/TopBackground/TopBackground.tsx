@@ -1,6 +1,6 @@
 import React from "react";
 
-import topBackground from "@assets/img/topBackground.svg";
+import topBackground from "@assets/img/topBackground.png";
 
 import Header from "./components/Header/Header";
 import styles from "./styles.module.scss";
