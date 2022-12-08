@@ -240,7 +240,7 @@ Benetti B.Now 63M выполнена из стали и алюминия. Яхт
     priceColor: "light",
     model: "Benetti 108 Tradition Supreme",
     year: 2017,
-    place: "Хорватия",
+    place: "Италия",
     best: true,
     video: yacht_3_video,
     series: "Серия Benetti",
