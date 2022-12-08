@@ -1,10 +1,10 @@
 import React from "react";
 
-import logo from "@assets/img/logoOceanBay.svg";
 import { deleteHash } from "@config/deleteHash";
 import { SECTIONS } from "@config/sections";
 import { Link } from "react-router-dom";
 
+import Logo from "./components/Logo/Logo";
 import styles from "./styles.module.scss";
 
 const Header: React.FC = () => {
@@ -14,7 +14,7 @@ const Header: React.FC = () => {
 
   return (
     <div className={styles.header}>
-      <img src={logo} className={styles.header_logo} alt="ocean bay" />
+      <Logo />
       <div className={styles.header_menu}>
         {SECTIONS.map((section) => {
           return (

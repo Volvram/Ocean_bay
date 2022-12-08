@@ -1,0 +1,35 @@
+@import "@styles/variables.scss";
+
+.logo {
+    width: 216px;
+
+    &_line {
+        fill: #ffffff;
+
+        animation: drawIn 2s ease-in forwards;
+    }
+}
+
+@keyframes drawIn {
+    to {
+        fill: #050A30;
+    }
+}
+
+@media screen and (max-width: $tablet-album-width) {
+    .logo {
+        width: 180px;
+    }
+}
+
+@media screen and (max-width: $tablet-portrait-width) {
+    .logo {
+        width: 130px;
+    }
+}
+
+@media screen and (max-width: $phone-album-width) {
+    .logo {
+        width: 100px;
+    }
+}

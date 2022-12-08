@@ -15,10 +15,6 @@
 
     font-family: $comfortaa;
 
-    &_logo {
-        width: 216px;
-    }
-
     &_menu {
         display:flex;
         justify-content: space-between;
@@ -63,10 +59,6 @@
 
         font-size: 12px;
 
-        &_logo {
-            width: 180px;
-        }
-
         &_menu {
 
             &_choice {
@@ -87,10 +79,6 @@
         max-height: 60px;
 
         font-size: 10px;
-
-        &_logo {
-            width: 130px;
-        }
 
         &_menu {
 
