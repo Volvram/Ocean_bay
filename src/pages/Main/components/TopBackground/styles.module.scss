@@ -21,29 +21,46 @@
         &_title {
             padding-bottom: 4px;
 
-            font-family: $cormorantSC;
-            font-style: normal;
-            font-weight: 500;
-            font-size: 3vw;
-            line-height: 115.6%;
-
             width: fit-content;
 
             border-bottom: 1px solid $white-color;
 
             text-transform: uppercase;
+
+            font-family: $cormorantSC;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 56px;
+            
+            line-height: 115.6%;
         }
 
         &_slogan {
             margin-top: 8px;
 
+            max-width: 600px;
+
+            text-transform: uppercase;
+
             font-family: $cormorantSC;
             font-style: normal;
             font-weight: 500;
-            font-size: 1.2vw;
+            font-size: 20px;
             line-height: 115.6%;
+        }
+    }
+}
 
-            text-transform: uppercase;
+@media screen and (max-width: 1919px) {
+    .topBackground {
+        &_intro {
+            &_title {
+                font-size: 3vw;
+            }
+    
+            &_slogan {
+                font-size: 1.2vw;
+            }
         }
     }
 }
