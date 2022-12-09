@@ -19,25 +19,28 @@
         color: $white-color;
 
         &_title {
+            padding-bottom: 4px;
+
             font-family: $cormorantSC;
             font-style: normal;
             font-weight: 500;
-            font-size: 45px;
+            font-size: 3vw;
             line-height: 115.6%;
+
+            width: fit-content;
+
+            border-bottom: 1px solid $white-color;
 
             text-transform: uppercase;
         }
 
-        &_hr {
-            background-color: $white-color;
-            border: 1px solid $white-color;
-        }
-
         &_slogan {
+            margin-top: 8px;
+
             font-family: $cormorantSC;
             font-style: normal;
             font-weight: 500;
-            font-size: 20px;
+            font-size: 1.2vw;
             line-height: 115.6%;
 
             text-transform: uppercase;
@@ -52,11 +55,11 @@
             padding-top: 20%;
 
             &_title {
-                font-size: 36px;
+                font-size: 45px;
             }
 
             &_slogan {
-                font-size: 18px;
+                font-size: 20px;
             }
         }
     }
@@ -76,7 +79,7 @@
             }
 
             &_slogan {
-                font-size: 14px;
+                font-size: 12px;
             }
         }
     }
@@ -92,7 +95,7 @@
             }
 
             &_slogan {
-                font-size: 13px;
+                font-size: 8px;
             }
         }
     }
@@ -112,7 +115,7 @@
             }
 
             &_slogan {
-                font-size: 12px;
+                font-size: 7px;
             }
         }
     }

@@ -31,7 +31,7 @@
                     left: 100px;
                     right: unset;
 
-                    max-width: 380px;
+                    max-width: 450px;
                 }
     
                 &_upperRight {
@@ -173,6 +173,20 @@
     &_smallImages {
         &_smallImage:hover {
             transform: scale(1.05);
+        }
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .yachtDescription {
+        &_imageBlock {
+            &_bigImage {
+                &_description {
+                    &_upperLeft {
+                        max-width: 380px;
+                    }
+                }
+            }
         }
     }
 }

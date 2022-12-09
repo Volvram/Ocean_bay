@@ -60,7 +60,7 @@
         margin-left: auto;
         margin-right: auto;
 
-        width: fit-content;
+        width: 500px;
 
         &_img {
             width: 100%;
@@ -83,6 +83,8 @@
         &_schema {
             margin-left: 0px;
             margin-right: 0px;
+
+            width: fit-content;
         }
     }
 }

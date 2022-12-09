@@ -31,6 +31,8 @@
 
         max-width: 480px;
 
+        white-space: nowrap;
+
         font-family: $cormorantUnicase;
         font-style: normal;
         font-weight: 500;
@@ -145,6 +147,10 @@
 @media screen and (max-width: 1400px) {
     .contacts {
         padding-right: 0px;
+
+        &_reservation {
+            white-space: normal;
+        }
     }
 }
 

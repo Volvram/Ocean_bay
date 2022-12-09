@@ -56,13 +56,15 @@
 
     &_model {
         position: absolute;
-        left: 24px;
+        left: 40px;
         bottom: 80px;
+
+        font-size: 18px;
     }
 
     &_made {
         position: absolute;
-        left: 24px;
+        left: 40px;
         bottom: 50px;
 
         display:flex;

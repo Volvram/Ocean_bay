@@ -18,7 +18,6 @@ const TopBackground: React.FC = () => {
         >
           ЯХТ-КЛУБ OCEAN BAY.
         </div>
-        <hr className={styles.topBackground_intro_hr} />
         <div
           className={`${styles.topBackground_intro_slogan} element-animation`}
         >
