@@ -15,11 +15,14 @@ const AlterHeader: React.FC = () => {
   return (
     <div className={styles.background}>
       <div className={styles.alterHeader}>
-        <img
-          src={alterLogo}
-          className={styles.alterHeader_logo}
-          alt="ocean bay"
-        />
+        <Link to="/">
+          <img
+            src={alterLogo}
+            className={styles.alterHeader_logo}
+            alt="ocean bay"
+          />
+        </Link>
+
         <div className={styles.alterHeader_menu}>
           {SECTIONS.map((section) => {
             return (
