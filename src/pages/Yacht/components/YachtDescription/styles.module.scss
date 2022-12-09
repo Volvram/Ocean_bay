@@ -31,7 +31,7 @@
                     left: 100px;
                     right: unset;
 
-                    max-width: 450px;
+                    max-width: 460px;
                 }
     
                 &_upperRight {
@@ -49,9 +49,11 @@
                 &_lowerLeft {
                     position: absolute;
                     top: unset;
-                    bottom: 25px;
+                    bottom: 50px;
                     left: 100px;
                     right: unset;
+
+                    max-width: 450px;
                 }
 
                 &_lowerRight {
@@ -61,7 +63,7 @@
                     left: unset;
                     right: 100px;
     
-                    max-width: 400px;
+                    max-width: 450px;
 
                     text-align: right; 
                 }
@@ -177,26 +179,44 @@
     }
 }
 
-@media screen and (max-width: 1400px) {
-    .yachtDescription {
-        &_imageBlock {
-            &_bigImage {
-                &_description {
-                    &_upperLeft {
-                        max-width: 380px;
-                    }
-                }
-            }
-        }
-    }
-}
-
 @media screen and (max-width: $desktop-width) {
     .yachtDescription {
         &_imageBlock {
             &_bigImage {
                 &_description {
                     font-size: 15px;
+
+                    &_upperLeft {
+                        top: 25px;
+                        bottom: unset;
+                        left: 100px;
+                        right: unset;
+
+                        max-width: 370px;
+                    }
+
+                    &_upperRight {
+                        top: 25px;
+                        bottom: unset;
+                        left: unset;
+                        right: 100px;
+                    }
+
+                    &_lowerLeft {
+                        top: unset;
+                        bottom: 25px;
+                        left: 100px;
+                        right: unset;
+                    }
+
+                    &_lowerRight {
+                        top: unset;
+                        bottom: 25px;
+                        left: unset;
+                        right: 100px;
+
+                        max-width: 350px;
+                    }
                 }
             }
         }
@@ -228,16 +248,16 @@
                     font-size: 12px;
 
                     &_upperLeft {
-                        max-width: 340px;
-
                         top: 15px;
                         bottom: unset;
                         left: 25px;
                         right: unset;
+
+                        max-width: 330px;
                     }
 
                     &_upperRight {
-                        max-width: 450px;
+                        max-width: 440px;
 
                         top: 15px;
                         bottom: unset;
@@ -250,6 +270,8 @@
                         bottom: 15px;
                         left: 25px;
                         right: unset;
+
+                        max-width: 350px;
                     }
 
                     &_lowerRight {
@@ -258,7 +280,7 @@
                         left: unset;
                         right: 25px;
 
-                        max-width: 300px;
+                        max-width: 350px;
                     }
                 }
             }
@@ -299,6 +321,8 @@
                         bottom: unset;
                         left: 15px;
                         right: unset;
+
+                        max-width: 270px;
                     }
 
                     &_upperRight {
@@ -320,6 +344,8 @@
                         bottom: 5px;
                         left: unset;
                         right: 15px;
+
+                        max-width: 300px;
                     }
                 }
             }
