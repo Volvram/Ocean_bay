@@ -1,10 +1,9 @@
 # Ocean bay
 
+Вашему вниманию представляем сервис по аренде яхт премиального качества.
+
 Окунитесь в роскошное море яхт тут https://ocean-bay.netlify.app
 
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
